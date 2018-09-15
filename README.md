@@ -9,4 +9,5 @@
 - [78](https://leetcode.com/problems/subsets/description/).[Subsets](/src/Q47Subset.java)
 - [90](https://leetcode.com/problems/subsets-ii/description/).[SubsetsII](/src/Q47SubsetII.java)
 - [216](https://leetcode.com/problems/combination-sum-iii/description/).[CombinationSumIII](/src/Q216CombinationSumIII.java)
+- [357](https://leetcode.com/problems/count-numbers-with-unique-digits/description/).[Count Numbers with Unique Digits](/src/Q357CountNumberswithUniqueDigits.java)
 - [526](https://leetcode.com/problems/beautiful-arrangement/description/).[BeautifulArrangement](/src/Q526BeautifulArrangement.java)
