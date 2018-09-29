@@ -13,7 +13,7 @@
 - [357](https://leetcode.com/problems/count-numbers-with-unique-digits/description/).[Count Numbers with Unique Digits](/src/Q357CountNumberswithUniqueDigits.java)
 - [526](https://leetcode.com/problems/beautiful-arrangement/description/).[BeautifulArrangement](/src/Q526BeautifulArrangement.java)
 
-### HashTable
+### HashMap
 - [1](https://leetcode.com/problems/two-sum/description/).[Two Sum](/src/Q1TwoSum.java)
 - [217](https://leetcode.com/problems/contains-duplicate/description/).[217. Contains Duplicate](/src/Q217ContainsDuplicate.java)
 
@@ -21,3 +21,15 @@
 - [15](https://leetcode.com/problems/3sum/description/).[3Sum](/src/Q153Sum.java)
 - [119](https://leetcode.com/problems/pascals-triangle-ii/description/).[Pascal's Triangle II](/src/Q119PascalsTriangleII.java)
 - [422](https://leetcode.com/problems/find-all-duplicates-in-an-array/description/).[Find All Duplicates in an Array](/src/Q422FindAllDuplicatesinanArray.java)
+
+### List
+- [19](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/).[Remove Nth Node From End of List](/src/Q19RemoveNthNodeFromEndofList.java)
+- []().[]()
+
+### Stack
+- [20](https://leetcode.com/problems/valid-parentheses/description/).[Valid Parentheses](/src/Q20ValidParentheses.java)
+
+### String
+- [3](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/).[Longest Substring Without Repeating Characters](/src/Q3LongestSubstringWithoutRepeatingCharacters.java)
+- [5](https://leetcode.com/problems/longest-palindromic-substring/).[Longest Palindromic Substring](/src/Q5LongestPalindromicSubstring.java)
+- [14](https://leetcode.com/problems/longest-common-prefix/description/).[Longest Common Prefix](/src/Q14LongestCommonPrefix.java)
