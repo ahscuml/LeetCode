@@ -26,12 +26,12 @@ public class Q80RemoveDuplicatesfromSortedArrayII {
     /**
      * 代码真滴简单
      * 思路也很简单，两个指针，一个是当前遍历的位置——n,另外一个是返回数组的位置i,数组为[0,i)
-     * */
+     */
     public static int removeDuplicates(int[] nums) {
         int i = 0;
         for (int n : nums)
             // 由于后面用到i-2,所以i>2, n > nums[i-2]判断的是当前元素是否重复
-            if (i < 2 || n > nums[i-2])
+            if (i < 2 || n > nums[i - 2])
                 nums[i++] = n;
         return i;
     }
