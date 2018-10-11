@@ -19,6 +19,9 @@ public class Q141LinkedListCycle {
 
     }
 
+    /**
+     * 利用双指针，一个在前，一个在后，两个步调不一样，最终总会相遇，达到判断是否循环的目的
+     * */
     public static boolean hasCycle(ListNode head) {
         ListNode runner = head;
         ListNode walker = head;

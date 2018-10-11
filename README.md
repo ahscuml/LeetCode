@@ -48,7 +48,7 @@ Easy
 ---|---|--- |
 [1](https://leetcode.com/problems/two-sum/description/)                                  | [Two Sum](/src/Q1TwoSum.java)                                                           | HashMap
 [88](https://leetcode.com/problems/merge-sorted-array/description/)                      | [Merge Sorted Array](/src/Q88MergeSortedArray.java)                                     | Array、双指针
-[141](https://leetcode.com/problems/linked-list-cycle/description/)                      | [Linked List Cycle](/src/Q141LinkedListCycle)                                           | ListNode、双指针      
+[141](https://leetcode.com/problems/linked-list-cycle/description/)                      | [Linked List Cycle](/src/Q141LinkedListCycle.java)                                      | ListNode、双指针      
 
 Medium
 ---
