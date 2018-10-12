@@ -44,18 +44,19 @@
 
 Easy
 ---
-题号|题目|Tags|
----|---|--- |
+题号|题目|Tags|star|
+--- |--- |--- |--- |
 [1](https://leetcode.com/problems/two-sum/description/)                                  | [Two Sum](/src/Q1TwoSum.java)                                                           | HashMap
 [88](https://leetcode.com/problems/merge-sorted-array/description/)                      | [Merge Sorted Array](/src/Q88MergeSortedArray.java)                                     | Array、双指针
 [141](https://leetcode.com/problems/linked-list-cycle/description/)                      | [Linked List Cycle](/src/Q141LinkedListCycle.java)                                      | ListNode、双指针      
 
 Medium
 ---
-题号|题目|Tags|
----|---|--- |
+题号|题目|Tags|star|
+---|---|--- |--- |
 [60](https://leetcode.com/problems/permutation-sequence/description/)                   | [Permutation Sequence](/src/Q60PermutationSequence.java)                                 | Array、感觉像是递归
-[80](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/) | [Remove Duplicates from Sorted Array II](/src/Q80RemoveDuplicatesfromSortedArrayII.java) | Array、指针碰撞
+[61](https://leetcode.com/problems/rotate-list/description/)                            | [Rotate List](/src/Q61RotateList.java)                                                   | ListNode、双指针      |:sunny:
+[80](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/) | [Remove Duplicates from Sorted Array II](/src/Q80RemoveDuplicatesfromSortedArrayII.java) | Array、双指针                    
 [86](https://leetcode.com/problems/partition-list/description/)                         | [Partition List](/src/Q86PartitionList.java)                                             | ListNode、双指针            
 [209](https://leetcode.com/problems/minimum-size-subarray-sum/description/)             | [Minimum Size Subarray Sum](/src/Q209MinimumSizeSubarraySum.java)                        | Array、滑动窗口
 [215](https://leetcode.com/problems/kth-largest-element-in-an-array/description/)       | [Kth Largest Element in an Array](/src/Q215KthLargestElementinanArray.java)              | Array、快速选择算法
