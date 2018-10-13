@@ -47,6 +47,7 @@ Easy
 题号|题目|Tags|star|
 --- |--- |--- |--- |
 [1](https://leetcode.com/problems/two-sum/description/)                                  | [Two Sum](/src/Q1TwoSum.java)                                                           | HashMap
+[53](https://leetcode.com/problems/maximum-subarray/description/)                        | [Maximum Subarray](/src/Q53MaximumSubarray.java)                                        | Array、DP             | :star: :star: :star:                                             
 [88](https://leetcode.com/problems/merge-sorted-array/description/)                      | [Merge Sorted Array](/src/Q88MergeSortedArray.java)                                     | Array、双指针
 [141](https://leetcode.com/problems/linked-list-cycle/description/)                      | [Linked List Cycle](/src/Q141LinkedListCycle.java)                                      | ListNode、双指针      | :star: :star: :star:
 [234](https://leetcode.com/problems/palindrome-linked-list/description/)                 | [Palindrome Linked List](/src/Q234PalindromeLinkedList.java)                            | ListNode、双指针      | :star: :star: :star:                        
