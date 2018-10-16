@@ -56,6 +56,7 @@ Medium
 ---
 题号|题目|Tags|star|
 ---|---|--- |--- |
+[34](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) | [Find First and Last Position of Element in Sorted Array](/src/Q34FindFirstandLastPositionofElementinSortedArray.java) | Array、BinarySearch | :star: :star: :star:
 [60](https://leetcode.com/problems/permutation-sequence/description/)                   | [Permutation Sequence](/src/Q60PermutationSequence.java)                                 | Array、感觉像是递归
 [61](https://leetcode.com/problems/rotate-list/description/)                            | [Rotate List](/src/Q61RotateList.java)                                                   | ListNode、双指针      | :star:
 [80](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/) | [Remove Duplicates from Sorted Array II](/src/Q80RemoveDuplicatesfromSortedArrayII.java) | Array、双指针                    
