@@ -52,6 +52,8 @@ public class Test {
         employee.forEach((employee1) -> System.out.println(employee1));
         // 日志
         Logger.getGlobal().info("Hahaha");
+
+        System.out.println(2 ^ 3);
     }
 }
 
