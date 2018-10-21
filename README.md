@@ -52,15 +52,18 @@ Easy
 [136](https://leetcode.com/problems/single-number/description/)                          | [Single Number](/src/Q136SingleNumber.java)                                             | Array、二进制         | :star: :star: :star:                                                              
 [141](https://leetcode.com/problems/linked-list-cycle/description/)                      | [Linked List Cycle](/src/Q141LinkedListCycle.java)                                      | ListNode、双指针      | :star: :star: :star:
 [234](https://leetcode.com/problems/palindrome-linked-list/description/)                 | [Palindrome Linked List](/src/Q234PalindromeLinkedList.java)                            | ListNode、双指针      | :star: :star: :star:                        
-[581](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/description/)  | [Shortest Unsorted Continuous Subarray](/src/Q581ShortestUnsortedContinuousSubarray.java) | Array               | :star: :star: :star:
+[401](https://leetcode.com/problems/binary-watch/description/)                           | [Binary Watch](/src/Q401BinaryWatch.java)                                               | 递归                 | :star:                                                      
+[581](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/description/)  | [Shortest Unsorted Continuous Subarray](/src/Q581ShortestUnsortedContinuousSubarray.java) | Array              | :star: :star: :star:
 
 Medium
 ---
 题号|题目|Tags|star|
 ---|---|--- |--- |
+[17](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/)  | [Letter Combinations of a Phone Number](/src/Q17LetterCombinationsofaPhoneNumber.java)   | 递归                  | :star: :star: :star:
 [34](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) | [Find First and Last Position of Element in Sorted Array](/src/Q34FindFirstandLastPositionofElementinSortedArray.java) | Array、BinarySearch | :star: :star: :star:
 [60](https://leetcode.com/problems/permutation-sequence/description/)                   | [Permutation Sequence](/src/Q60PermutationSequence.java)                                 | Array、感觉像是递归
 [61](https://leetcode.com/problems/rotate-list/description/)                            | [Rotate List](/src/Q61RotateList.java)                                                   | ListNode、双指针      | :star:
+[79](https://leetcode.com/problems/word-search/description/)                            | [Word Search](/src/Q79WordSearch.java)                                                   | 二维数组、递归         | :star: :star: :star:            
 [80](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/) | [Remove Duplicates from Sorted Array II](/src/Q80RemoveDuplicatesfromSortedArrayII.java) | Array、双指针                    
 [86](https://leetcode.com/problems/partition-list/description/)                         | [Partition List](/src/Q86PartitionList.java)                                             | ListNode、双指针            
 [142](https://leetcode.com/problems/linked-list-cycle-ii/description/)                  | [Linked List Cycle II](/src/Q142LinkedListCycleII.java)                                  | ListNode、双指针      | :star: :star: :star:                                                                      
