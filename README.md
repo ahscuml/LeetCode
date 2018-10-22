@@ -56,6 +56,7 @@ Easy
 [401](https://leetcode.com/problems/binary-watch/description/)                            | [Binary Watch](/src/Q401BinaryWatch.java)                                               | 递归                 | :star:                                                      
 [448](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/)|[Find All Numbers Disappeared in an Array](/src/Q448FindAllNumbersDisappearedinanArray.java)| Array           | :star: :star: :star:
 [581](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/description/)   | [Shortest Unsorted Continuous Subarray](/src/Q581ShortestUnsortedContinuousSubarray.java) | Array              | :star: :star: :star:
+[628](https://leetcode.com/problems/maximum-product-of-three-numbers/description/)        | [Maximum Product of Three Numbers](/src/Q628MaximumProductofThreeNumbers.java)          | Array                | :star:                           
 
 Medium
 ---
