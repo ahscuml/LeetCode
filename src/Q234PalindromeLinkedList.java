@@ -6,7 +6,7 @@
 public class Q234PalindromeLinkedList {
     /**
      * 反转后面的链表，然后方便比较
-     * */
+     */
     public boolean isPalindrome(ListNode head) {
         ListNode fast = head, slow = head;
         // 通过步数不一样的两个指针，达到找到中间的目的
@@ -31,9 +31,10 @@ public class Q234PalindromeLinkedList {
         }
         return true;
     }
+
     /**
      * 反转链表的函数
-     * */
+     */
     public ListNode reverse(ListNode head) {
         ListNode prev = null;
         while (head != null) {
@@ -43,6 +44,16 @@ public class Q234PalindromeLinkedList {
             head = next;
         }
         return prev;
+    }
+
+    static class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode(int x) {
+            val = x;
+            next = null;
+        }
     }
 }
 
