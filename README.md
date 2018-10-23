@@ -76,4 +76,5 @@ Medium
 [215](https://leetcode.com/problems/kth-largest-element-in-an-array/description/)       | [Kth Largest Element in an Array](/src/Q215KthLargestElementinanArray.java)              | Array、快速选择算法
 [238](https://leetcode.com/problems/product-of-array-except-self/description/)          | [Product of Array Except Self](/src/Q238ProductofArrayExceptSelf.java)                   | Array
 [287](https://leetcode.com/problems/find-the-duplicate-number/description/)             | [Find the Duplicate Number](/src/Q287FindtheDuplicateNumber.java)                        | Array、双指针         | :star: :star: :star:
+[560](https://leetcode.com/problems/subarray-sum-equals-k/description/)                 | [Subarray Sum Equals K](/src/Q560SubarraySumEqualsK.java)                                | Array、HashMap        | :star: :star: :star:                                                                
 [713](https://leetcode.com/problems/subarray-product-less-than-k/description/)          | [Subarray Product Less Than K](/src/Q713SubarrayProductLessThanK.java)                   | 双指针、滑动窗口       | :star: :star:                                                     
