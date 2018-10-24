@@ -33,7 +33,7 @@ public class Q48RotateImage {
                 matrix[i][n - 1 - j] = temp;
             }
         }
-        // 斜向对称
+        // 斜向对称(注意上面是水平还是垂直对称，不同的对称方式，斜向对称的方向不一样)
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n - i; j++) {
                 int temp = matrix[i][j];
