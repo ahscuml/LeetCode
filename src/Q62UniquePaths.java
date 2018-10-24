@@ -53,16 +53,12 @@ public class Q62UniquePaths {
             return uniquePaths(n, m);
         }
         int[] aux = new int[n];
-        // 赋初始值
-        for (int i = 0; i < n; i++) {
-            aux[i] = 1;
-        }
-        for (int i = 1; i < m; i++) {
-            for (int j = 1; j < n; j++) {
-                if (i == 0 || j == 0) {
-                    aux[0] = 1;
-                } else {
-                    aux[j] = aux[j] + aux[j - 1];
+        // 数组没有初始化的默认是1
+        aux[0] = 1;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if(j > 0) {
+                    aux[j] = aux[j - 1] + aux[j];
                 }
             }
         }
