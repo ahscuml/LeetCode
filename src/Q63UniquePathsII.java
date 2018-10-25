@@ -13,6 +13,8 @@ public class Q63UniquePathsII {
      * 与62题类似，只不过这次加上了阻挡的条件
      * 同样采用动态规划的方法，在循环中加入了判断是否有效的条件
      * 值得注意的是在边界条件地方如果出现阻断，则以后都达到不了
+     *
+     * 同样这道题还有另外一个优化的方法，就是不使用额外空间，将结果存储到二维数组上
      * */
     public static int uniquePathsWithObstacles(int[][] matrix) {
         int[] aux = new int[matrix[0].length];
