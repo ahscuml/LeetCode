@@ -3,6 +3,7 @@ package Test;
 import java.util.Stack;
 
 /**
+ * 栈构建队列
  * @author ahscuml
  * @date 2018/10/22
  * @time 11:13

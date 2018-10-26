@@ -14,7 +14,6 @@
 - [526](https://leetcode.com/problems/beautiful-arrangement/description/). [BeautifulArrangement](/src/Q526BeautifulArrangement.java)
 
 ### HashMap
-- [1](https://leetcode.com/problems/two-sum/description/). [Two Sum](/src/Q1TwoSum.java)
 - [217](https://leetcode.com/problems/contains-duplicate/description/). [Contains Duplicate](/src/Q217ContainsDuplicate.java)
 
 ### Array
@@ -46,7 +45,7 @@ Easy
 ---
 题号|题目|Tags|star|
 --- |--- |--- |--- |
-[1](https://leetcode.com/problems/two-sum/description/)                                   | [Two Sum](/src/Q1TwoSum.java)                                                           | HashMap
+[1](https://leetcode.com/problems/two-sum/description/)                                   | [Two Sum](/src/Q1TwoSum.java)                                                           | HashMap               | :star: :star: :star:            
 [53](https://leetcode.com/problems/maximum-subarray/description/)                         | [Maximum Subarray](/src/Q53MaximumSubarray.java)                                        | Array、DP             | :star: :star: :star:                                             
 [88](https://leetcode.com/problems/merge-sorted-array/description/)                       | [Merge Sorted Array](/src/Q88MergeSortedArray.java)                                     | Array、双指针
 [136](https://leetcode.com/problems/single-number/description/)                           | [Single Number](/src/Q136SingleNumber.java)                                             | Array、二进制         | :star: :star: :star:                                                              
@@ -64,6 +63,8 @@ Medium
 ---
 题号|题目|Tags|star|
 ---|---|--- |--- |
+[2](https://leetcode.com/problems/add-two-numbers/description/)                         | [Add Two Numbers](/src/Q2AddTwoNumbers.java)                                             | ListNode              | :star: :star: :star:                                                                   
+[3](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | [Longest Substring Without Repeating Characters](/src/Q3LongestSubstringWithoutRepeatingCharacters.java) | 双指针         | :star: :star: :star:                  
 [17](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/)  | [Letter Combinations of a Phone Number](/src/Q17LetterCombinationsofaPhoneNumber.java)   | 递归                  | :star: :star: :star:
 [34](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) | [Find First and Last Position of Element in Sorted Array](/src/Q34FindFirstandLastPositionofElementinSortedArray.java) | Array、BinarySearch | :star: :star: :star:
 [48](https://leetcode.com/problems/rotate-image/description/)                           | [Rotate Image](/src/Q48RotateImage.java)                                                 | 二维数组              | :star: :star:                                          
