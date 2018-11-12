@@ -1,6 +1,4 @@
-package test;
-
-import java.util.PriorityQueue;
+package Test;
 
 /**
  * @author ahscuml
@@ -8,12 +6,17 @@ import java.util.PriorityQueue;
  * @time 19:40
  */
 public class Test {
-    static abstract class Human {
-
+    public static void main(String[] args) {
+        // 实际类型变化
+        Human man = new Man();
+        Human woman = new Woman();
+        Test te = new Test();
+        te.sayHello(man);
+        te.sayHello(woman);
+        // 静态类型变化
+        te.sayHello((Man) man);
+        te.sayHello((Woman) woman);
     }
-
-    static class Man extends Human{}
-    static class Woman extends Human{}
 
     public void sayHello(Human guy) {
         System.out.println("Hello, guy");
@@ -27,16 +30,14 @@ public class Test {
         System.out.println("Hello, Lady");
     }
 
-    public static void main(String[] args) {
-        // 实际类型变化
-        Human man = new Man();
-        Human woman = new Woman();
-        Test te = new Test();
-        te.sayHello(man);
-        te.sayHello(woman);
-        // 静态类型变化
-        te.sayHello((Man) man);
-        te.sayHello((Woman) woman);
+    static abstract class Human {
+
+    }
+
+    static class Man extends Human {
+    }
+
+    static class Woman extends Human {
     }
 }
 
