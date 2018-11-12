@@ -1,4 +1,4 @@
-package Test;
+package test;
 
 /**
  * 标号1-n的n个人首尾相接，1到3报数，报到3的推出，求最后一个人的标号

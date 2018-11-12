@@ -22,7 +22,6 @@
 - [422](https://leetcode.com/problems/find-all-duplicates-in-an-array/description/). [Find All Duplicates in an Array](/src/Q422FindAllDuplicatesinanArray.java)
 
 ### List
-- [2](https://leetcode.com/problems/add-two-numbers/description/). [Add Two Numbers](/src/Q2AddTwoNumbers.java)
 - [19](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/). [Remove Nth Node From End of List](/src/Q19RemoveNthNodeFromEndofList.java)
 - [21](https://leetcode.com/problems/merge-two-sorted-lists/description/). [Merge Two Sorted Lists](/src/Q21MergeTwoSortedLists.java)
 - [24](https://leetcode.com/problems/swap-nodes-in-pairs/description/). [Swap Nodes in Pairs](/src/Q24SwapNodesinPairs.java)
@@ -31,7 +30,6 @@
 - [20](https://leetcode.com/problems/valid-parentheses/description/). [Valid Parentheses](/src/Q20ValidParentheses.java)
 
 ### String
-- [3](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/). [Longest Substring Without Repeating Characters](/src/Q3LongestSubstringWithoutRepeatingCharacters.java)
 - [5](https://leetcode.com/problems/longest-palindromic-substring/). [Longest Palindromic Substring](/src/Q5LongestPalindromicSubstring.java)
 - [14](https://leetcode.com/problems/longest-common-prefix/description/). [Longest Common Prefix](/src/Q14LongestCommonPrefix.java)
 
@@ -80,7 +78,7 @@ Medium
 [142](https://leetcode.com/problems/linked-list-cycle-ii/description/)                  | [Linked List Cycle II](/src/Q142LinkedListCycleII.java)                                  | ListNode、双指针      | :star: :star: :star:                                                                      
 [152](https://leetcode.com/problems/maximum-product-subarray/description/)              | [Maximum Product Subarray](/src/Q152MaximumProductSubarray.java)                         | Array、 动态规划      | :star: :star: :star:                                                
 [209](https://leetcode.com/problems/minimum-size-subarray-sum/description/)             | [Minimum Size Subarray Sum](/src/Q209MinimumSizeSubarraySum.java)                        | Array、滑动窗口
-[215](https://leetcode.com/problems/kth-largest-element-in-an-array/description/)       | [Kth Largest Element in an Array](/src/Q215KthLargestElementinanArray.java)              | Array、快速选择算法
+[215](https://leetcode.com/problems/kth-largest-element-in-an-array/description/)       | [Kth Largest Element in an Array](/src/Q215KthLargestElementinanArray.java)              | Array、快速选择算法    | :star: :star: :star: :star:
 [238](https://leetcode.com/problems/product-of-array-except-self/description/)          | [Product of Array Except Self](/src/Q238ProductofArrayExceptSelf.java)                   | Array
 [287](https://leetcode.com/problems/find-the-duplicate-number/description/)             | [Find the Duplicate Number](/src/Q287FindtheDuplicateNumber.java)                        | Array、双指针         | :star: :star: :star:
 [560](https://leetcode.com/problems/subarray-sum-equals-k/description/)                 | [Subarray Sum Equals K](/src/Q560SubarraySumEqualsK.java)                                | Array、HashMap        | :star: :star: :star:                                                                
