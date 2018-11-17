@@ -11,11 +11,11 @@ public class Q56MergeIntervals {
      */
     public static void main(String[] args) {
         List<Interval> test = new ArrayList<Interval>();
-        test.add(new Interval(1,3));
-        test.add(new Interval(2,6));
-        test.add(new Interval(8,10));
-        test.add(new Interval(15,18));
-        for (Interval it: merge(test)) {
+        test.add(new Interval(1, 3));
+        test.add(new Interval(2, 6));
+        test.add(new Interval(8, 10));
+        test.add(new Interval(15, 18));
+        for (Interval it : merge(test)) {
             System.out.print("[" + it.start + "," + it.end + "]");
         }
     }
@@ -40,11 +40,11 @@ public class Q56MergeIntervals {
         Interval cur = iterator.next();
         while (iterator.hasNext()) {
             Interval next = iterator.next();
-            if(cur.end < next.start) {
+            if (cur.end < next.start) {
                 cur = next;
                 continue;
             }
-            cur.end = Math.max(cur.end,next.end);
+            cur.end = Math.max(cur.end, next.end);
             iterator.remove();
         }
 
