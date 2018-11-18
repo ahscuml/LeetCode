@@ -60,9 +60,12 @@ public class InOrder {
         while (cur != null || !stack.isEmpty()) {
             if (cur != null) {
                 stack.push(cur);
+                // 先是左子树
                 cur = cur.left;
             } else {
+                // 到达叶子节点，弹出栈，输出，在遍历右子树
                 cur = stack.pop();
+                // 跟前序遍历相反，这个是出栈输出
                 System.out.print(cur.val);
                 cur = cur.right;
             }

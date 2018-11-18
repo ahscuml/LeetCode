@@ -3,8 +3,9 @@ package TEST;
 import java.util.Stack;
 
 /**
- * 前序遍历的递归和迭代两种实现
+ * 前序遍历的递归和迭代两种实现   前序遍历同样是深度优先遍历
  * 前序遍历首先访问根节点，其次是左孩子，最后是右孩子
+ *
  * @author ahscuml
  * @date 2018/11/17
  * @time 11:00
@@ -48,10 +49,10 @@ public class PreOrder {
     }
 
     /**
-     *  前序遍历迭代方法
-     * */
+     * 前序遍历迭代方法
+     */
     public static void preorderIte(TreeNode root) {
-        if(root != null) {
+        if (root != null) {
             // 用于存储遍历过的结点
             Stack<TreeNode> stack = new Stack<>();
             TreeNode cur = root;
@@ -59,7 +60,9 @@ public class PreOrder {
             while (cur != null || !stack.isEmpty()) {
                 // 如果当前节点不为空，输出值，压入栈，移动到左子树
                 if (cur != null) {
+                    // 前序遍历根节点首先输出，所以输出在最前
                     System.out.print(cur.val);
+                    // 将cur入栈是为了后面遍历右子树
                     stack.push(cur);
                     cur = cur.left;
                 } else {

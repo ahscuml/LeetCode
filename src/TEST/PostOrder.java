@@ -67,7 +67,7 @@ public class PostOrder {
                 // 先进后出，所以先是右边
                 cur = cur.right;
             } else {
-                // output还没有出栈，stack只是为了帮助找到左子树
+                // output不出栈，stack只是为了帮助找到左子树
                 cur = stack.pop();
                 cur = cur.left;
             }

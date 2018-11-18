@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * 树的层序遍历
+ * 树的层序遍历 同样是广度优先遍历
  *
  * @author ahscuml
  * @date 2018/11/17
@@ -46,7 +46,7 @@ public class LevelOrder {
             return;
         }
         // 分层遍历
-        for (int i = 1; i <= depth(root); i++) {
+        for (int i = 1; i <= depthIte(root); i++) {
             levleOrder(root, i);
         }
     }
@@ -58,7 +58,7 @@ public class LevelOrder {
         if (root == null || level < 1) {
             return;
         }
-        // 这里的level不是指树的层
+        // 这里的level不是指树的层，指还剩的层数
         if (level == 1) {
             System.out.print(root.val);
         }
@@ -70,13 +70,13 @@ public class LevelOrder {
     /**
      * 递归方法计算树深度
      */
-    private static int depth(TreeNode root) {
+    private static int depthRec(TreeNode root) {
         if (root == null) {
             return 0;
         }
 
-        int l = depth(root.left);
-        int r = depth(root.right);
+        int l = depthRec(root.left);
+        int r = depthRec(root.right);
 
         if (l > r) {
             return l + 1;
@@ -85,6 +85,45 @@ public class LevelOrder {
         }
     }
 
+    /**
+     * 非递归方法计算深度
+     * 想法与层序遍历的非递归方法类似
+     * 利用队列的先进先出特性
+     * 队列中的结构始终是一层的元素加上已经出队的当前层的元素的左右子树
+     * 如果一层出队完成，那么队列中的元素就是下一层元素的总个数
+     */
+    private static int depthIte(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+
+        Queue<TreeNode> queue = new LinkedList<>();
+        TreeNode cur;
+        queue.offer(root);
+        // current：记录本层已经遍历的节点个数  last：当这一层的节点的总个数
+        int current, last;
+        int level = 0;
+        while (!queue.isEmpty()) {
+            current = 0;
+            last = queue.size();
+            // 注意条件判断，current是从0开始
+            // current是已经出队的个数，如果与last就无法再出栈了
+            while (current < last) {
+                cur = queue.poll();
+                // 出队一个元素current++
+                current++;
+                if (cur.left != null) {
+                    queue.offer(cur.left);
+                }
+                if (cur.right != null) {
+                    queue.offer(cur.right);
+                }
+            }
+            // 每遍历完一层，level++
+            level++;
+        }
+        return level;
+    }
 
     /**
      * 层序遍历，非递归方法
@@ -98,9 +137,11 @@ public class LevelOrder {
         }
 
         TreeNode cur;
+        // LinkedList类实现了Queue接口，因此我们可以把LinkedList当成Queue来用
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
 
+        // 每次都是当前节点出队，然后存入当前节点的左右子节点
         while (queue.size() != 0) {
             cur = queue.poll();
             System.out.print(cur.val);
