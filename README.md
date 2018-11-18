@@ -1,59 +1,27 @@
 # LeetCode刷题  
+
 题号是LeetCode原题，题目是自己的解答  
-### 回溯法  
-- [22](https://leetcode.com/problems/generate-parentheses/description/). [Generate Parentheses](/src/Q22GenerateParentheses.java)
-- [39](https://leetcode.com/problems/combination-sum/description/). [CombinationSum](/src/Q39CombinationSum.java)
-- [40](https://leetcode.com/problems/combination-sum-ii/description/). [CombinationSum](/src/Q40CombinationSumII.java)
-- [46](https://leetcode.com/problems/permutations/description/). [Permutations](/src/Q46Permutations.java)
-- [47](https://leetcode.com/problems/permutations-ii/description/). [PermutationsII](/src/Q47PermutationsII.java)
-- [77](https://leetcode.com/problems/combinations/description/). [Combinations](/src/Q77Combinations.java)
-- [78](https://leetcode.com/problems/subsets/description/). [Subsets](/src/Q47Subset.java)
-- [90](https://leetcode.com/problems/subsets-ii/description/). [SubsetsII](/src/Q47SubsetII.java)
-- [216](https://leetcode.com/problems/combination-sum-iii/description/). [CombinationSumIII](/src/Q216CombinationSumIII.java)
-- [357](https://leetcode.com/problems/count-numbers-with-unique-digits/description/). [Count Numbers with Unique Digits](/src/Q357CountNumberswithUniqueDigits.java)
-- [526](https://leetcode.com/problems/beautiful-arrangement/description/). [BeautifulArrangement](/src/Q526BeautifulArrangement.java)
-
-### HashMap
-- [217](https://leetcode.com/problems/contains-duplicate/description/). [Contains Duplicate](/src/Q217ContainsDuplicate.java)
-
-### Array
-- [15](https://leetcode.com/problems/3sum/description/). [3Sum](/src/Q153Sum.java)
-- [119](https://leetcode.com/problems/pascals-triangle-ii/description/). [Pascal's Triangle II](/src/Q119PascalsTriangleII.java)
-- [422](https://leetcode.com/problems/find-all-duplicates-in-an-array/description/). [Find All Duplicates in an Array](/src/Q422FindAllDuplicatesinanArray.java)
-
-### List
-- [19](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/). [Remove Nth Node From End of List](/src/Q19RemoveNthNodeFromEndofList.java)
-- [21](https://leetcode.com/problems/merge-two-sorted-lists/description/). [Merge Two Sorted Lists](/src/Q21MergeTwoSortedLists.java)
-- [24](https://leetcode.com/problems/swap-nodes-in-pairs/description/). [Swap Nodes in Pairs](/src/Q24SwapNodesinPairs.java)
-
-### Stack
-- [20](https://leetcode.com/problems/valid-parentheses/description/). [Valid Parentheses](/src/Q20ValidParentheses.java)
-
-### String
-- [5](https://leetcode.com/problems/longest-palindromic-substring/). [Longest Palindromic Substring](/src/Q5LongestPalindromicSubstring.java)
-- [14](https://leetcode.com/problems/longest-common-prefix/description/). [Longest Common Prefix](/src/Q14LongestCommonPrefix.java)
-
-
-
-
-
-
 
 Easy
 ---
 题号|题目|Tags|star|
 --- |--- |--- |--- |
 [1](https://leetcode.com/problems/two-sum/description/)                                   | [Two Sum](/src/Q1TwoSum.java)                                                           | HashMap               | :star: :star: :star:            
+[14](https://leetcode.com/problems/longest-common-prefix/description/)                    | [Longest Common Prefix](/src/Q14LongestCommonPrefix.java)                               | String                | :star: 
+[20](https://leetcode.com/problems/valid-parentheses/description/)                        | [Valid Parentheses](/src/Q20ValidParentheses.java)                                      | String、Stack         | :star: :star: :star:  
+[21](https://leetcode.com/problems/merge-two-sorted-lists/description/)                   | [Merge Two Sorted Lists](/src/Q21MergeTwoSortedLists.java)                              | LinkedList            | :star: :star: :star:
 [53](https://leetcode.com/problems/maximum-subarray/description/)                         | [Maximum Subarray](/src/Q53MaximumSubarray.java)                                        | Array、DP             | :star: :star: :star:                                             
 [88](https://leetcode.com/problems/merge-sorted-array/description/)                       | [Merge Sorted Array](/src/Q88MergeSortedArray.java)                                     | Array、双指针
 [101](https://leetcode.com/problems/symmetric-tree/)                                      | [Symmetric Tree](/src/Q101SymmetricTree.java)                                           | Tree                  | :star: :star: :star:                                  
 [104](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)            | [Maximum Depth of Binary Tree](/src/Q104MaximumDepthofBinaryTree.java)                  | Tree                 | :star: :star: :star:                                                      
+[119](https://leetcode.com/problems/pascals-triangle-ii/description/)                     | [Pascal's Triangle II](/src/Q119PascalsTriangleII.java)                                 | Array                 | :star: :star:
 [136](https://leetcode.com/problems/single-number/description/)                           | [Single Number](/src/Q136SingleNumber.java)                                             | Array、二进制         | :star: :star: :star:                                                              
 [141](https://leetcode.com/problems/linked-list-cycle/description/)                       | [Linked List Cycle](/src/Q141LinkedListCycle.java)                                      | ListNode、双指针      | :star: :star: :star:
 [160](https://leetcode.com/problems/intersection-of-two-linked-lists/description/)        | [Intersection of Two Linked Lists](/src/Q160IntersectionofTwoLinkedLists.java)          | ListNode、双指针      | :star: :star: :star:                                                        
 [169](https://leetcode.com/problems/majority-element/description/)                        | [Majority Element](/src/Q169MajorityElement.java)                                       | Array                | :star: :star:                                                                     
 [198](https://leetcode.com/problems/house-robber/description/)                            | [House Robber](/src/Q198HouseRobber.java)                                               | Array                | :star: :star: :star:                                              
 [206](https://leetcode.com/problems/reverse-linked-list/description/)                     | [Reverse Linked List](/src/Q206ReverseLinkedList.java)                                  | ListNode             | :star: :star: :star:                     
+[217](https://leetcode.com/problems/contains-duplicate/description/)                      | [Contains Duplicate](/src/Q217ContainsDuplicate.java)                                   | Array、HashTable     | :star:                                          
 [226](https://leetcode.com/problems/invert-binary-tree/)                                  | [Invert Binary Tree](/src/Q226InvertBinaryTree.java)                                    | Tree                 | :star: :star: :star:                                             
 [234](https://leetcode.com/problems/palindrome-linked-list/description/)                  | [Palindrome Linked List](/src/Q234PalindromeLinkedList.java)                            | ListNode、双指针      | :star: :star: :star:                        
 [401](https://leetcode.com/problems/binary-watch/description/)                            | [Binary Watch](/src/Q401BinaryWatch.java)                                               | 递归                 | :star:                                                      
@@ -67,26 +35,47 @@ Medium
 ---|---|--- |--- |
 [2](https://leetcode.com/problems/add-two-numbers/description/)                         | [Add Two Numbers](/src/Q2AddTwoNumbers.java)                                             | ListNode              | :star: :star: :star:                                                                   
 [3](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | [Longest Substring Without Repeating Characters](/src/Q3LongestSubstringWithoutRepeatingCharacters.java) | 双指针         | :star: :star: :star:                  
+[5](https://leetcode.com/problems/longest-palindromic-substring/)                       | [Longest Palindromic Substring](/src/Q5LongestPalindromicSubstring.java)                 | String、动态规划      | :star: :star: :star: 
+[15](https://leetcode.com/problems/3sum/description/)                                   | [3Sum](/src/Q153Sum.java)                                                                | Array、双指针         | :star: :star: :star:                                   
 [17](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/)  | [Letter Combinations of a Phone Number](/src/Q17LetterCombinationsofaPhoneNumber.java)   | 递归                  | :star: :star: :star:
+[19](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)       | [Remove Nth Node From End of List](/src/Q19RemoveNthNodeFromEndofList.java)              | 双指针                | :star: :star: :star:    
+[22](https://leetcode.com/problems/generate-parentheses/)                               | [Generate Parentheses](/src/Q22GenerateParentheses.java)                                 | String、回溯法        | :star: :star: :star:              
+[24](https://leetcode.com/problems/swap-nodes-in-pairs/description/)                    | [Swap Nodes in Pairs](/src/Q24SwapNodesinPairs.java)                                     | LinkedList            | :star: :star: :star:
 [34](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) | [Find First and Last Position of Element in Sorted Array](/src/Q34FindFirstandLastPositionofElementinSortedArray.java) | Array、BinarySearch | :star: :star: :star:
+[39](https://leetcode.com/problems/combination-sum/description/)                        | [CombinationSum](/src/Q39CombinationSum.java)                                            | Array、回溯法         | :star: :star: :star:
+[40](https://leetcode.com/problems/combination-sum-ii/description/)                     | [CombinationSum](/src/Q40CombinationSumII.java)                                          | Array、回溯法         | :star: :star: :star:                                             
+[46](https://leetcode.com/problems/permutations/description/)                           | [Permutations](/src/Q46Permutations.java)                                                | 回溯法                | :star: :star: :star:                                       
+[47](https://leetcode.com/problems/permutations-ii/description/)                        | [PermutationsII](/src/Q47PermutationsII.java)                                            | 回溯法                | :star: :star: :star:                                                                    
 [48](https://leetcode.com/problems/rotate-image/description/)                           | [Rotate Image](/src/Q48RotateImage.java)                                                 | 二维数组              | :star: :star:                                          
 [49](https://leetcode.com/problems/group-anagrams/description/)                         | [Group Anagrams](/src/Q49GroupAnagrams.java)                                             | ArrayList, HashMap   | :star: :star: :star:                                  
 [56](https://leetcode.com/problems/merge-intervals/description/)                        | [Merge Intervals](/src/Q56MergeIntervals.java)                                           | 迭代器，自写比较函数  | :star: :star: :star:                                      
 [60](https://leetcode.com/problems/permutation-sequence/description/)                   | [Permutation Sequence](/src/Q60PermutationSequence.java)                                 | Array、感觉像是递归
 [61](https://leetcode.com/problems/rotate-list/description/)                            | [Rotate List](/src/Q61RotateList.java)                                                   | ListNode、双指针      | :star:
-[62](https://leetcode.com/problems/unique-paths/description/)                           | [Unique Paths](/src/Q62UniquePaths.java)                                                 | 二维数组、动态规划     |  :star: :star: :star:                                    
-[63](https://leetcode.com/problems/unique-paths-ii/description/)                        | [Unique Paths II](/src/Q63UniquePathsII.java)                                            | 二维数组、动态规划     |  :star: :star: :star:                      
-[64](https://leetcode.com/problems/minimum-path-sum/description/)                       | [Minimum Path Sum](/src/Q64MinimumPathSum.java)                                          | 二维数组、动态规划     |  :star: :star: :star:                        
+[62](https://leetcode.com/problems/unique-paths/description/)                           | [Unique Paths](/src/Q62UniquePaths.java)                                                 | 二维数组、动态规划     | :star: :star: :star:                                    
+[63](https://leetcode.com/problems/unique-paths-ii/description/)                        | [Unique Paths II](/src/Q63UniquePathsII.java)                                            | 二维数组、动态规划     | :star: :star: :star:                      
+[64](https://leetcode.com/problems/minimum-path-sum/description/)                       | [Minimum Path Sum](/src/Q64MinimumPathSum.java)                                          | 二维数组、动态规划     | :star: :star: :star:                        
+[77](https://leetcode.com/problems/combinations/description/)                           | [Combinations](/src/Q77Combinations.java)                                                | 回溯法                | :star: :star: :star:                                
+[78](https://leetcode.com/problems/subsets/description/)                                | [Subsets](/src/Q78Subsets.java)                                                          | Array、回溯法         | :star: :star: :star:
 [79](https://leetcode.com/problems/word-search/description/)                            | [Word Search](/src/Q79WordSearch.java)                                                   | 二维数组、递归         | :star: :star: :star:            
 [80](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/) | [Remove Duplicates from Sorted Array II](/src/Q80RemoveDuplicatesfromSortedArrayII.java) | Array、双指针                    
 [86](https://leetcode.com/problems/partition-list/description/)                         | [Partition List](/src/Q86PartitionList.java)                                             | ListNode、双指针            
+[90](https://leetcode.com/problems/subsets-ii/description/)                             | [SubsetsII](/src/Q90SubsetsII.java)                                                      | Array、回溯法         | :star: :star: :star:
 [94](https://leetcode.com/problems/binary-tree-inorder-traversal/description/)          | [Binary Tree Inorder Traversal](/src/Q94BinaryTreeInorderTraversal.java)                 | Tree                  | :star: :star: :star:
 [142](https://leetcode.com/problems/linked-list-cycle-ii/description/)                  | [Linked List Cycle II](/src/Q142LinkedListCycleII.java)                                  | ListNode、双指针      | :star: :star: :star:                                                                      
 [152](https://leetcode.com/problems/maximum-product-subarray/description/)              | [Maximum Product Subarray](/src/Q152MaximumProductSubarray.java)                         | Array、 动态规划      | :star: :star: :star:                                                
 [209](https://leetcode.com/problems/minimum-size-subarray-sum/description/)             | [Minimum Size Subarray Sum](/src/Q209MinimumSizeSubarraySum.java)                        | Array、滑动窗口
 [215](https://leetcode.com/problems/kth-largest-element-in-an-array/description/)       | [Kth Largest Element in an Array](/src/Q215KthLargestElementinanArray.java)              | Array、快速选择算法    | :star: :star: :star: :star:
+[216](https://leetcode.com/problems/combination-sum-iii/description/)                   | [CombinationSumIII](/src/Q216CombinationSumIII.java)                                     | Array、回溯法         | :star: :star: :star:
 [238](https://leetcode.com/problems/product-of-array-except-self/description/)          | [Product of Array Except Self](/src/Q238ProductofArrayExceptSelf.java)                   | Array
 [287](https://leetcode.com/problems/find-the-duplicate-number/description/)             | [Find the Duplicate Number](/src/Q287FindtheDuplicateNumber.java)                        | Array、双指针         | :star: :star: :star:
-[402](https://leetcode.com/problems/remove-k-digits/description/)                       | [Remove K Digits](/src/Q402RemoveKDigits.java)                                           | 贪心算法              | :star: :star: :star:                                                                         
+[357](https://leetcode.com/problems/count-numbers-with-unique-digits/description/)      | [Count Numbers with Unique Digits](/src/Q357CountNumberswithUniqueDigits.java)           | 动态规划、回溯        | :star: :star: :star:
+[442](https://leetcode.com/problems/find-all-duplicates-in-an-array/description/)       | [Find All Duplicates in an Array](/src/Q442FindAllDuplicatesinanArray.java)              | Array                 | :star: :star: :star:
+[526](https://leetcode.com/problems/beautiful-arrangement/description/)                 | [BeautifulArrangement](/src/Q526BeautifulArrangement.java)                               | 回溯                  | :star: :star: :star:                     
 [560](https://leetcode.com/problems/subarray-sum-equals-k/description/)                 | [Subarray Sum Equals K](/src/Q560SubarraySumEqualsK.java)                                | Array、HashMap        | :star: :star: :star:                                                                
 [713](https://leetcode.com/problems/subarray-product-less-than-k/description/)          | [Subarray Product Less Than K](/src/Q713SubarrayProductLessThanK.java)                   | 双指针、滑动窗口       | :star: :star:                                                     
+
+Hard
+---
+题号|题目|Tags|star|
+---|---|--- |--- | 
+[4](https://leetcode.com/problems/median-of-two-sorted-arrays/)                        | [Median of Two Sorted Arrays](/src/Q4MedianofTwoSortedArrays.java)                       | 分治思想、二分查找      | :star: :star: :star:                                             

@@ -6,7 +6,7 @@ import java.util.List;
  * @date 2018/9/19
  * @time 20:07
  */
-public class Q422FindAllDuplicatesinanArray {
+public class Q442FindAllDuplicatesinanArray {
     public static void main(String[] args) {
         int[] nums = {4, 3, 2, 7, 8, 2, 3, 1};
         System.out.println(findDuplicates(nums).toString());
