@@ -37,14 +37,16 @@ public class Q198HouseRobber {
      * 同时采用了存储的空间换时间的想法，同时采用了循环，避免了递归溢出的问题
      * 当前元素的最大值与之前的最大值有关系，与152题类似
      */
-    public static int rob(int[] num) {
-        int prevNo = 0;
-        int prevYes = 0;
-        for (int n : num) {
-            int temp = prevNo;
-            prevNo = Math.max(prevNo, prevYes);
-            prevYes = n + temp;
+    public static int rob(int[] nums) {
+        int pre = 0;
+        int beh = 0;
+        for(int i : nums) {
+            // dp[i] = Math.max(dp[i - 1], dp[i - 2] + nums[i])
+            // pre,beh,i
+            int temp = beh;
+            beh = Math.max(pre + i, beh);
+            pre = temp;
         }
-        return Math.max(prevNo, prevYes);
+        return  beh ;
     }
 }
