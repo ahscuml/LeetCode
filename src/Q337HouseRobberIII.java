@@ -107,7 +107,7 @@ public class Q337HouseRobberIII {
     /**
      * 树的定义
      */
-    public static class TreeNode {
+    private static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
