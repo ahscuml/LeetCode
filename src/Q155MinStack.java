@@ -5,14 +5,23 @@ import java.util.Stack;
  * @date 2018/11/20
  * @time 21:11
  */
-// TODO: 2018/11/20 测试函数
 
 public class Q155MinStack {
     /**
      * 测试函数
      * */
     public static void main(String[] args) {
-
+        Q155MinStack minStack = new Q155MinStack();
+        minStack.push(5);
+        minStack.push(6);
+        minStack.push(3);
+        System.out.println(minStack.getMin());
+        minStack.push(4);
+        System.out.println(minStack.getMin());
+        minStack.pop();
+        minStack.push(2);
+        System.out.println(minStack.getMin());
+        System.out.println(minStack.top());
     }
 
     /**
