@@ -6,7 +6,7 @@ import java.util.*;
  * @time 10:44
  */
 
-// TODO: 2018/11/21 翻转的方法时间复杂度可能不太好，1.利用LinkedList双向链表来进行双向遍历，2.或者通过两个栈来进行存储，避免翻转
+// TODO: 2018/11/21 翻转的方法时间复杂度可能不太好，1.利用LinkedList双向链表来进行双向遍历
 public class Q103BinaryTreeZigzagLevelOrderTraversal {
     /**
      * 测试函数
@@ -25,6 +25,7 @@ public class Q103BinaryTreeZigzagLevelOrderTraversal {
 
         System.out.println(zigzagLevelOrderIte(treeNode1));
         System.out.println(zigzagLevelOrderRec(treeNode1));
+        System.out.println(Helper(treeNode1));
     }
 
     /**
@@ -96,6 +97,49 @@ public class Q103BinaryTreeZigzagLevelOrderTraversal {
 
         travel(curr.left, sol, level + 1);
         travel(curr.right, sol, level + 1);
+    }
+
+    /**
+     * 使用一个栈与一个队列来实现，因为栈弹出的过程就是翻转的过程
+     */
+    private static List<List<Integer>> Helper(TreeNode root) {
+        TreeNode cur;
+        List<List<Integer>> res = new ArrayList<>();
+        if (root == null) {
+            return res;
+        }
+        Stack<TreeNode> stack = new Stack<>();
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+        while (!queue.isEmpty() || !stack.isEmpty()) {
+            List<Integer> temp = new ArrayList<>();
+            while (!queue.isEmpty()) {
+                cur = queue.poll();
+                temp.add(cur.val);
+                if (cur.left != null) {
+                    stack.push(cur.left);
+                }
+                if (cur.right != null) {
+                    stack.push(cur.right);
+                }
+            }
+            res.add(temp);
+            temp = new ArrayList<>();
+            while (!stack.isEmpty()) {
+                cur = stack.pop();
+                temp.add(cur.val);
+                if (cur.left != null) {
+                    queue.offer(cur.left);
+                }
+                if (cur.right != null) {
+                    queue.offer(cur.right);
+                }
+            }
+            if (!temp.isEmpty()) {
+                res.add(temp);
+            }
+        }
+        return res;
     }
 
     /**

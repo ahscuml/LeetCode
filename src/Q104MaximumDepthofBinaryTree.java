@@ -41,9 +41,10 @@ public class Q104MaximumDepthofBinaryTree {
         }
         return maxDepth(root, 1);
     }
+
     /**
      * 辅助函数，使用的是递归的方法
-     * */
+     */
     public static int maxDepth(TreeNode root, int depth) {
 
         if (root != null) {
@@ -54,9 +55,10 @@ public class Q104MaximumDepthofBinaryTree {
         }
         return 0;
     }
+
     /**
      * 非递归的方法计算最大深度
-     * */
+     */
     private static int maxDepthIte(TreeNode root) {
         if (root == null) {
             return 0;
