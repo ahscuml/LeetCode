@@ -1,3 +1,5 @@
+import TEST.InOrder;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,20 +11,23 @@ import java.util.Map;
 public class Q105ConstructBinaryTreefromPreorderandInorderTraversal {
     /**
      * 测试函数
-     * */
+     */
     public static void main(String[] args) {
+        int[] preorder = {3, 9, 20, 15, 7};
+        int[] inorder = {9, 3, 15, 20, 7};
 
+        preorderRec(buildTree(preorder,inorder));
     }
 
     /**
-     *  思路很简单
-     *  前序遍历第一个值是根节点 ，中序中找到根节点，前面的就是左子树，后面的就是右子树
-     *  这样子就能构建出一个树了
-     * */
-    public TreeNode buildTree(int[] preorder, int[] inorder) {
+     * 思路很简单
+     * 前序遍历第一个值是根节点 ，中序中找到根节点，前面的就是左子树，后面的就是右子树
+     * 这样子就能构建出一个树了
+     */
+    public static TreeNode buildTree(int[] preorder, int[] inorder) {
         // 利用HashMap存储可以快速通过值找到下标
         Map<Integer, Integer> inMap = new HashMap<Integer, Integer>();
-        for(int i = 0; i < inorder.length; i++) {
+        for (int i = 0; i < inorder.length; i++) {
             inMap.put(inorder[i], i);
         }
 
@@ -30,13 +35,15 @@ public class Q105ConstructBinaryTreefromPreorderandInorderTraversal {
         return root;
     }
 
-    public TreeNode buildTree(int[] preorder, int preStart, int preEnd, int[] inorder, int inStart, int inEnd, Map<Integer, Integer> inMap) {
-        if(preStart > preEnd || inStart > inEnd) {
+
+    public static TreeNode buildTree(int[] preorder, int preStart, int preEnd, int[] inorder, int inStart, int inEnd,
+                              Map<Integer, Integer> inMap) {
+        if (preStart > preEnd || inStart > inEnd) {
             return null;
         }
 
         TreeNode root = new TreeNode(preorder[preStart]);
-        // 在in中通过pre的值找到下标 
+        // 在in中通过pre的值找到下标
         int inRoot = inMap.get(root.val);
         int numsLeft = inRoot - inStart;
 
@@ -45,6 +52,18 @@ public class Q105ConstructBinaryTreefromPreorderandInorderTraversal {
 
         return root;
     }
+
+    /**
+     * 前序遍历，递归方法
+     */
+    public static void preorderRec(TreeNode root) {
+        if (root != null) {
+            System.out.print(root.val);
+            preorderRec(root.left);
+            preorderRec(root.right);
+        }
+    }
+
     /**
      * 树结构的定义
      */

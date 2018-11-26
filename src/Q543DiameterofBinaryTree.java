@@ -6,13 +6,24 @@
 
 // TODO: 2018/11/26 对于递归的理解，这个问题深刻
 public class Q543DiameterofBinaryTree {
-    int max = 0;
+    static int max = 0;
 
     /**
      * 测试函数
      */
     public static void main(String[] args) {
+        TreeNode treeNode1 = new TreeNode(1);
+        TreeNode treeNode2 = new TreeNode(2);
+        TreeNode treeNode3 = new TreeNode(3);
+        TreeNode treeNode4 = new TreeNode(4);
+        TreeNode treeNode5 = new TreeNode(5);
 
+        treeNode1.left = treeNode2;
+        treeNode1.right = treeNode3;
+        treeNode2.left = treeNode4;
+        treeNode2.right = treeNode5;
+
+        System.out.println(diameterOfBinaryTree(treeNode1));
     }
 
     /**
@@ -21,12 +32,12 @@ public class Q543DiameterofBinaryTree {
      * <p>
      * 但是这样子的时间复杂度会比较长因为我做了很多无效的循环
      */
-    public int diameterOfBinaryTree(TreeNode root) {
+    public static int diameterOfBinaryTree(TreeNode root) {
         maxDepth(root);
         return max;
     }
 
-    private int maxDepth(TreeNode root) {
+    private static int maxDepth(TreeNode root) {
         if (root == null) return 0;
 
         int left = maxDepth(root.left);
