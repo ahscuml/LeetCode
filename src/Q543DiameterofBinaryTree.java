@@ -4,7 +4,7 @@
  * @time 19:52
  */
 
-// TODO: 2018/11/26 对于递归的理解，这个问题深刻 
+// TODO: 2018/11/26 对于递归的理解，这个问题深刻
 public class Q543DiameterofBinaryTree {
     int max = 0;
 
