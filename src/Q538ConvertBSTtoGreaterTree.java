@@ -68,6 +68,7 @@ public class Q538ConvertBSTtoGreaterTree {
         Stack<TreeNode> stack = new Stack<>();
         TreeNode cur = root;
         while (!stack.isEmpty() || cur != null) {
+            // 首先压入右节点，先进后出，找到最大的元素
             while (cur != null) {
                 stack.push(cur);
                 cur = cur.right;
@@ -76,6 +77,7 @@ public class Q538ConvertBSTtoGreaterTree {
 
             cur.val += sum;
             sum = cur.val;
+            // 左节点也比父节点大，所以找到左节点，先右，后中，再左
             cur = cur.left;
         }
         return root;
