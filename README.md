@@ -84,13 +84,14 @@ Medium
 [215](https://leetcode.com/problems/kth-largest-element-in-an-array/description/)       | [Kth Largest Element in an Array](/src/Q215KthLargestElementinanArray.java)              | Array、快速选择算法    | :star: :star: :star: :star:
 [216](https://leetcode.com/problems/combination-sum-iii/description/)                   | [CombinationSumIII](/src/Q216CombinationSumIII.java)                                     | Array、回溯法         | :star: :star: :star:
 [238](https://leetcode.com/problems/product-of-array-except-self/description/)          | [Product of Array Except Self](/src/Q238ProductofArrayExceptSelf.java)                   | Array
-[287](https://leetcode.com/problems/find-the-duplicate-number/description/)             | [Find the Duplicate Number](/src/Q287FindtheDuplicateNumber.java)                        | Array、双指针         | :star: :star: :star:
-[337](https://leetcode.com/problems/house-robber-iii/)                                  | [House Robber III](/src/Q337HouseRobberIII.java)                                         | HashMap、动态规划     | :star: :star: :star:                                                         
-[357](https://leetcode.com/problems/count-numbers-with-unique-digits/description/)      | [Count Numbers with Unique Digits](/src/Q357CountNumberswithUniqueDigits.java)           | 动态规划、回溯        | :star: :star: :star:
+[287](https://leetcode.com/problems/find-the-duplicate-number/description/)             | [Find the Duplicate Number](/src/Q287FindtheDuplicateNumber.java)                        | Array、双指针          | :star: :star: :star:
+[337](https://leetcode.com/problems/house-robber-iii/)                                  | [House Robber III](/src/Q337HouseRobberIII.java)                                         | HashMap、动态规划      | :star: :star: :star:                                                         
+[357](https://leetcode.com/problems/count-numbers-with-unique-digits/description/)      | [Count Numbers with Unique Digits](/src/Q357CountNumberswithUniqueDigits.java)           | 动态规划、回溯         | :star: :star: :star:
+[438](https://leetcode.com/problems/find-all-anagrams-in-a-string/)                     | [Find All Anagrams in a String](/src/Q438FindAllAnagramsinaString.java)                  | HashTable、滑动窗口    | :star: :star: :star:
 [442](https://leetcode.com/problems/find-all-duplicates-in-an-array/description/)       | [Find All Duplicates in an Array](/src/Q442FindAllDuplicatesinanArray.java)              | Array                 | :star: :star: :star:
 [526](https://leetcode.com/problems/beautiful-arrangement/description/)                 | [BeautifulArrangement](/src/Q526BeautifulArrangement.java)                               | 回溯                  | :star: :star: :star:                     
 [560](https://leetcode.com/problems/subarray-sum-equals-k/description/)                 | [Subarray Sum Equals K](/src/Q560SubarraySumEqualsK.java)                                | Array、HashMap        | :star: :star: :star:                                                                
-[713](https://leetcode.com/problems/subarray-product-less-than-k/description/)          | [Subarray Product Less Than K](/src/Q713SubarrayProductLessThanK.java)                   | 双指针、滑动窗口       | :star: :star:                                                     
+[713](https://leetcode.com/problems/subarray-product-less-than-k/description/)          | [Subarray Product Less Than K](/src/Q713SubarrayProductLessThanK.java)                   | 双指针、滑动窗口        | :star: :star:                                                     
 
 Hard
 ---
