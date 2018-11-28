@@ -7,6 +7,7 @@ Easy
 题号|题目|Tags|star|
 --- |--- |--- |--- |
 [1](https://leetcode.com/problems/two-sum/description/)                                   | [Two Sum](/src/Q1TwoSum.java)                                                           | HashMap               | :star: :star: :star:            
+[7](https://leetcode.com/problems/reverse-integer/)                                       | [Reverse Integer](/src/Q7ReverseInteger.java)                                           | Integer               | :star: :star:                                              
 [14](https://leetcode.com/problems/longest-common-prefix/description/)                    | [Longest Common Prefix](/src/Q14LongestCommonPrefix.java)                               | String                | :star: 
 [20](https://leetcode.com/problems/valid-parentheses/description/)                        | [Valid Parentheses](/src/Q20ValidParentheses.java)                                      | String、Stack         | :star: :star: :star:  
 [21](https://leetcode.com/problems/merge-two-sorted-lists/description/)                   | [Merge Two Sorted Lists](/src/Q21MergeTwoSortedLists.java)                              | LinkedList            | :star: :star: :star:
