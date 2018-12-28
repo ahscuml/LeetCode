@@ -39,12 +39,15 @@ public class PostOrder {
      * 后序遍历，递归
      */
     private static void postOrderRec(TreeNode root) {
-        if (root == null) {
+        /*if (root == null) {
             return;
+        }*/
+        if(root!=null){
+            postOrderRec(root.left);
+            postOrderRec(root.right);
+            System.out.print(root.val);
         }
-        postOrderRec(root.left);
-        postOrderRec(root.right);
-        System.out.print(root.val);
+
     }
 
     /**
