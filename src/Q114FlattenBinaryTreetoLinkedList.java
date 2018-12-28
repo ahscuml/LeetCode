@@ -1,5 +1,3 @@
-import com.sun.xml.internal.bind.v2.TODO;
-
 import java.util.Stack;
 
 /**
@@ -10,7 +8,7 @@ import java.util.Stack;
  * @time 9:40
  */
 public class Q114FlattenBinaryTreetoLinkedList {
-    TODO 增加测试用例;
+    // TODO 增加测试用例;
     public static void main(String[] args) {
 
     }
