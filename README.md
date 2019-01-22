@@ -106,7 +106,8 @@ Medium
 [442](https://leetcode.com/problems/find-all-duplicates-in-an-array/description/)       | [Find All Duplicates in an Array](/src/Q442FindAllDuplicatesinanArray.java)              | Array                 | :star: :star: :star:
 [526](https://leetcode.com/problems/beautiful-arrangement/description/)                 | [BeautifulArrangement](/src/Q526BeautifulArrangement.java)                               | 回溯                  | :star: :star: :star:                     
 [560](https://leetcode.com/problems/subarray-sum-equals-k/description/)                 | [Subarray Sum Equals K](/src/Q560SubarraySumEqualsK.java)                                | Array、HashMap        | :star: :star: :star:                                                                
-[646](https://leetcode.com/problems/maximum-length-of-pair-chain/)                      | [Maximum Length of Pair Chain](/src/Q646MaximumLengthofPairChain.java)                   | DP、Greedy
+[646](https://leetcode.com/problems/maximum-length-of-pair-chain/)                      | [Maximum Length of Pair Chain](/src/Q646MaximumLengthofPairChain.java)                   | DP、Greedy            | :star: :star: :star:
+[673](https://leetcode.com/problems/number-of-longest-increasing-subsequence/)          | [Number of Longest Increasing Subsequence](/src/Q673NumberofLongestIncreasingSubsequence.java) | DP              | :star: :star:
 [713](https://leetcode.com/problems/subarray-product-less-than-k/description/)          | [Subarray Product Less Than K](/src/Q713SubarrayProductLessThanK.java)                   | 双指针、滑动窗口        | :star: :star:                                                     
 
 Hard

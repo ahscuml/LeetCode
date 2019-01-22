@@ -14,6 +14,9 @@ public class Q279PerfectSquares {
         System.out.println(numSquares(13));
     }
 
+    /**
+     * 动态规划方法
+     * */
     public static int numSquares(int n) {
         int count[] = new int[n + 1];
         Arrays.fill(count, Integer.MAX_VALUE);
