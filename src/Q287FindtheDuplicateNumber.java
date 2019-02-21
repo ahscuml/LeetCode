@@ -10,6 +10,7 @@ public class Q287FindtheDuplicateNumber {
     }
     /**
      * 类似于旋转链表的那道题 142
+     * 关注题目中不一样的部分，那就是题目中数组内容大小有限制，为 1~n。
      * */
     public static int findDuplicate(int[] nums) {
         if (nums.length > 1){

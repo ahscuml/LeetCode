@@ -21,8 +21,8 @@ public class Q142LinkedListCycleII {
      * 首先假设头结点到循环点的距离是M，循环的距离是K，第一次相遇点距离循环点L，第一次相遇走过的步数S
      * Walker： S = M + n1*K + L
      * runner: 2S = M + n2*K + L
-     * 两式相减 S = (n2 - n1) * K = nK(也就是第一次相遇走过的距离相当于循环了n圈)
-     * 那么Walker2从头开始走也就意味着他们会在相同的地点相遇，也会在循环开始的地方第一次相遇
+     * 两式相减 S = (n2 - n1) * K = nK(也就是第一次相遇走过的距离相当于循环了n圈) 也就是M + L的距离是整数圈倍
+     * 那么Walker2从头开始走也就意味着他们会在相同的(M + L)地点相遇，也同样会在循环开始的地方第一次相遇
      * */
     public static ListNode detectCycle(ListNode head) {
         // 与判断是否是循环链表一样的判断方法
