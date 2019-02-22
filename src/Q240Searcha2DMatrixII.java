@@ -16,6 +16,7 @@ public class Q240Searcha2DMatrixII {
 
     /**
      * 和剑指offer的第四题一样
+     * 最好的方法是行最小，列最大，这样子来寻找
      */
     public static boolean searchMatrix(int[][] matrix, int target) {
         if (matrix == null || matrix.length == 0) {
