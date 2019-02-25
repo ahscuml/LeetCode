@@ -82,6 +82,7 @@ Medium
 [80](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/) | [Remove Duplicates from Sorted Array II](/src/Q80RemoveDuplicatesfromSortedArrayII.java) | Array、双指针                    
 [86](https://leetcode.com/problems/partition-list/description/)                         | [Partition List](/src/Q86PartitionList.java)                                             | ListNode、双指针            
 [90](https://leetcode.com/problems/subsets-ii/description/)                             | [SubsetsII](/src/Q90SubsetsII.java)                                                      | Array、回溯法         | :star: :star: :star:
+[92](https://leetcode.com/problems/reverse-linked-list-ii/)                             | [Reverse Linked List II](/src/Q92ReverseLinkedListII.java)                               | ListNode              | :star: :star: :star: 
 [94](https://leetcode.com/problems/binary-tree-inorder-traversal/description/)          | [Binary Tree Inorder Traversal](/src/Q94BinaryTreeInorderTraversal.java)                 | Tree                  | :star: :star: :star:
 [96](https://leetcode.com/problems/unique-binary-search-trees/)                         | [Unique Binary Search Trees](/src/Q96UniqueBinarySearchTrees.java)                       | BST, 递归             | :star: :star: :star:
 [102](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)          | [Binary Tree Level Order Traversal](/src/Q102BinaryTreeLevelOrderTraversal.java)         | Tree                 | :star: :star: :star: 

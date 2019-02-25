@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Stack;
 
 /**
  * 反转链表
@@ -16,7 +17,8 @@ public class Q206ReverseLinkedList {
         ListNode c = new ListNode(3);
         a.next = b;
         b.next = c;
-        ListNode head = reverseList(a);
+        //ListNode head = reverseList(a);
+        ListNode head = reverseListIII(a);
         while (head != null){
             System.out.println(head.val);
             head = head.next;
@@ -69,6 +71,29 @@ public class Q206ReverseLinkedList {
         pointer.next = null;
         return head;
     }
+
+    /**
+     * 使用栈存储ListNode，然后再逆序输出，结果不尽如人意
+     * */
+    public static ListNode reverseListIII(ListNode head) {
+        Stack<ListNode> stack = new Stack<ListNode>();
+        ListNode cur = head;
+        while(cur != null) {
+            stack.push(cur);
+            cur = cur.next;
+        }
+        ListNode dummyHead = new ListNode(-1);
+        cur = dummyHead;
+        while(!stack.isEmpty()) {
+            cur.next = stack.pop();
+            cur = cur.next;
+        }
+        return dummyHead.next;
+    }
+
+
+
+
 
     public static class ListNode {
         int val;
