@@ -1,4 +1,4 @@
-package DynamicProgramming.KnapsackProblem;
+package DynamicProgrammin;
 
 /**
  * 斐波那契问题是经典的动态规划问题，可以从这里面学到动态规划的思想
