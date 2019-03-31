@@ -4,14 +4,15 @@
 
 Easy
 ---
-题号|题目|Tags|star|
---- |--- |--- |--- |
+题号|题目|Tags|Star|Company|
+--- |--- |--- |--- |---|
 [1](https://leetcode.com/problems/two-sum/description/)                                   | [Two Sum](/src/Q1TwoSum.java)                                                           | HashMap               | :star: :star: :star:            
 [7](https://leetcode.com/problems/reverse-integer/)                                       | [Reverse Integer](/src/Q7ReverseInteger.java)                                           | Integer               | :star: :star:                                              
 [14](https://leetcode.com/problems/longest-common-prefix/description/)                    | [Longest Common Prefix](/src/Q14LongestCommonPrefix.java)                               | String                | :star: 
 [20](https://leetcode.com/problems/valid-parentheses/description/)                        | [Valid Parentheses](/src/Q20ValidParentheses.java)                                      | String、Stack         | :star: :star: :star:  
 [21](https://leetcode.com/problems/merge-two-sorted-lists/description/)                   | [Merge Two Sorted Lists](/src/Q21MergeTwoSortedLists.java)                              | LinkedList            | :star: :star: :star:
 [53](https://leetcode.com/problems/maximum-subarray/description/)                         | [Maximum Subarray](/src/Q53MaximumSubarray.java)                                        | Array、DP             | :star: :star: :star: :star:                                            
+[83](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)                   | [Remove Duplicates from Sorted List](src/Q83RemoveDuplicatesfromSortedList.java)        | ListNode              | :star: :star: :star:                   | ByteDance
 [88](https://leetcode.com/problems/merge-sorted-array/description/)                       | [Merge Sorted Array](/src/Q88MergeSortedArray.java)                                     | Array、双指针
 [100](https://leetcode.com/problems/same-tree/)                                           | [Same Tree](/src/Q100SameTree.java)                                                     | Tree                  | :star: :star: :star:
 [101](https://leetcode.com/problems/symmetric-tree/)                                      | [Symmetric Tree](/src/Q101SymmetricTree.java)                                           | Tree                  | :star: :star: :star:                                  
@@ -52,8 +53,8 @@ Easy
 
 Medium
 ---
-题号|题目|Tags|star|
----|---|--- |--- |
+题号|题目|Tags|Star|Company|
+---|---|--- |--- | --- |
 [2](https://leetcode.com/problems/add-two-numbers/description/)                         | [Add Two Numbers](/src/Q2AddTwoNumbers.java)                                             | LinkedList              | :star: :star: :star:                                                                   
 [3](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | [Longest Substring Without Repeating Characters](/src/Q3LongestSubstringWithoutRepeatingCharacters.java) | 双指针         | :star: :star: :star:                  
 [5](https://leetcode.com/problems/longest-palindromic-substring/)                       | [Longest Palindromic Substring](/src/Q5LongestPalindromicSubstring.java)                 | String、动态规划      | :star: :star: :star: 
@@ -124,8 +125,8 @@ Medium
 
 Hard
 ---
-题号|题目|Tags|star|
----|---|--- |--- | 
+题号|题目|Tags|Star|Company|
+---|---|--- |--- | ---|
 [4](https://leetcode.com/problems/median-of-two-sorted-arrays/)                        | [Median of Two Sorted Arrays](/src/Q4MedianofTwoSortedArrays.java)                       | 分治思想、二分查找      | :star: :star: :star:                                             
 [123](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)              | [Best Time to Buy and Sell Stock III](/src/Q123BestTimetoBuyandSellStockIII.java)        | DP、状态机             | :star: :star: :star: 
 [188](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)               | [Best Time to Buy and Sell Stock IV](/src/Q188BestTimetoBuyandSellStockIV.java)          | DP                    | :star: :star: :star:

@@ -42,7 +42,7 @@ public class PostOrder {
         /*if (root == null) {
             return;
         }*/
-        if(root!=null){
+        if (root != null) {
             postOrderRec(root.left);
             postOrderRec(root.right);
             System.out.print(root.val);
@@ -63,9 +63,9 @@ public class PostOrder {
         Stack<TreeNode> output = new Stack<>();
 
         TreeNode cur = root;
-         while (cur != null || !stack.isEmpty()) {
+        while (cur != null || !stack.isEmpty()) {
             if (cur != null) {
-                 output.push(cur);
+                output.push(cur);
                 stack.push(cur);
                 // 先进后出，所以先是右边
                 cur = cur.right;
