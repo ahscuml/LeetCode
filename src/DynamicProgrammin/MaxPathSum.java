@@ -1,4 +1,4 @@
-package DynamicProgramming.KnapsackProblem;
+package DynamicProgrammin;
 
 /**
  * 矩阵的最小路径和(左上角走到右下角,只能向右和向下走)

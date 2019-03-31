@@ -1,4 +1,4 @@
-package DynamicProgramming.KnapsackProblem;
+package DynamicProgrammin;
 
 import java.util.concurrent.atomic.AtomicIntegerArray;
 

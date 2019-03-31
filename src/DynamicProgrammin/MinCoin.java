@@ -1,4 +1,4 @@
-package DynamicProgramming.KnapsackProblem;
+package DynamicProgrammin;
 
 /**
  * @author ahscuml
