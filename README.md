@@ -90,7 +90,7 @@ Medium
 [102](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)          | [Binary Tree Level Order Traversal](/src/Q102BinaryTreeLevelOrderTraversal.java)         | Tree                 | :star: :star: :star: 
 [103](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)          | [Binary Tree Zigzag Level Order Traversal](/src/Q103BinaryTreeZigzagLevelOrderTraversal.java) | Tree            | :star: :star: :star:
 [113](https://leetcode.com/problems/path-sum-ii/)                                       | [Path Sum II](/src/Q113PathSumII.java)                                                   | Tree                 | :star: :star:                                                        
-[114](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)                | [Flatten Binary Tree to Linked List](/src/Q114FlattenBinaryTreetoLinkedList.java)        | Tree                 | :star: :star: :star:
+[114](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)                | [Flatten Binary Tree to Linked List](/src/Q114FlattenBinaryTreetoLinkedList.java)        | Tree、递归            | :star: :star: :star: ：star | ByteDance
 [120](https://leetcode.com/problems/triangle/)                                          | [Triangle](/src/Q120Triangle.java)                                                       | DP                   | :star: :star: :star:
 [139](https://leetcode.com/problems/word-break/)                                        | [Word Break](/src/Q139WordBreak.java)                                                    | DP              | :star: :star: :star:                                           
 [142](https://leetcode.com/problems/linked-list-cycle-ii/description/)                  | [Linked List Cycle II](/src/Q142LinkedListCycleII.java)                                  | LinkedList、双指针      | :star: :star: :star:                                                                      
@@ -129,4 +129,5 @@ Hard
 ---|---|--- |--- | ---|
 [4](https://leetcode.com/problems/median-of-two-sorted-arrays/)                        | [Median of Two Sorted Arrays](/src/Q4MedianofTwoSortedArrays.java)                       | 分治思想、二分查找      | :star: :star: :star:                                             
 [123](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)              | [Best Time to Buy and Sell Stock III](/src/Q123BestTimetoBuyandSellStockIII.java)        | DP、状态机             | :star: :star: :star: 
+[124](https://leetcode.com/problems/binary-tree-maximum-path-sum/)                     | [Binary Tree Maximum Path Sum](/src/Q124BinaryTreeMaximumPathSum.java)                   | Tree,递归              | :star: :star: :star:
 [188](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)               | [Best Time to Buy and Sell Stock IV](/src/Q188BestTimetoBuyandSellStockIV.java)          | DP                    | :star: :star: :star:

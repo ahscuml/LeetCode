@@ -24,6 +24,7 @@ public class Q114FlattenBinaryTreetoLinkedList {
         if (root == null) {
             return;
         }
+        // 这样递归调用保证是从后面往前面进行后面的操作的
         flatten(root.right);
         flatten(root.left);
         // 如果左面空，那么不用处理，直接返回
@@ -59,7 +60,7 @@ public class Q114FlattenBinaryTreetoLinkedList {
     }
 
     /**
-     * 迭代方法
+     * 迭代方法,先存右节点，再存左节点。
      */
     public void flattenIte(TreeNode root) {
         if (root == null) {
@@ -79,7 +80,6 @@ public class Q114FlattenBinaryTreetoLinkedList {
                 cur.right = stack.peek();
             }
             cur.left = null;
-
         }
     }
 
