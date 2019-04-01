@@ -50,6 +50,45 @@ public class Q86PartitionList {
         return smallHead.next;
     }
 
+    /**
+     * 空间复杂度O(1)，时间复杂度O(n)
+     * 在链表内部调整，找到一个小的，就把这个小的放到前面。
+     * */
+    public ListNode partitionII(ListNode head, int x) {
+        // 循环的方法
+        // 存3个节点，一个是pre，一个cur，还有一个小数字的尾节点
+        if(head == null) {
+            return head;
+        }
+        ListNode dummyHead = new ListNode(-1);
+        dummyHead.next = head;
+        ListNode cur = head;
+        ListNode pre = dummyHead;
+        ListNode tail = dummyHead;
+        while(cur != null) {
+            if(cur.val < x) {
+                if(tail == pre) {
+                    cur = cur.next;
+                    pre = pre.next;
+                    tail = tail.next;
+                } else {
+                    // 摘链
+                    pre.next = cur.next;
+                    // 插入
+                    cur.next = tail.next;
+                    tail.next = cur;
+                    tail = cur;
+                    cur = pre.next;
+                }
+
+            } else {
+                cur = cur.next;
+                pre = pre.next;
+            }
+        }
+        return dummyHead.next;
+    }
+
     public static class ListNode {
         int val;
         ListNode next;
