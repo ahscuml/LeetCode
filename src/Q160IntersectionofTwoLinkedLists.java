@@ -14,6 +14,7 @@ public class Q160IntersectionofTwoLinkedLists {
         listNode2.next = listNode3;
         listNode3.next = listNode4;
         System.out.println(getIntersectionNode(listNode1, listNode2).val);
+        System.out.println(getIntersectionNodeII(listNode1, listNode2).val);
     }
 
     /**
@@ -35,8 +36,41 @@ public class Q160IntersectionofTwoLinkedLists {
             a = a == null ? headB : a.next;
             b = b == null ? headA : b.next;
         }
-
         return a;
+    }
+
+    /**
+     * 另外一种循环的方法就是首先求出两个链表的长度，然后调整到一样长的地方在走，直到找到相同的那个节点
+     */
+    public static ListNode getIntersectionNodeII(ListNode headA, ListNode headB) {
+        if (headA == null || headB == null) {
+            return null;
+        }
+        int alen = len(headA);
+        int blen = len(headB);
+        while (alen > blen) {
+            headA = headA.next;
+            alen--;
+        }
+        while (blen > alen) {
+            headB = headB.next;
+            blen--;
+        }
+
+        while (headA != headB) {
+            headA = headA.next;
+            headB = headB.next;
+        }
+        return headA;
+    }
+
+    public static int len(ListNode node) {
+        int count = 0;
+        while (node != null) {
+            count++;
+            node = node.next;
+        }
+        return count;
     }
 
     static class ListNode {
