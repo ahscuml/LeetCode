@@ -79,19 +79,19 @@ public class Q148SortList {
      * 递归调用，两个节点，一个快，一个慢，快的到达末尾，慢的就到达中间
      */
     public static ListNode sortListRec(ListNode head) {
-        if (head == null || head.next == null)
+        if(head == null || head.next == null) {
             return head;
-        ListNode f = head.next.next;
-        ListNode p = head;
-        while (f != null && f.next != null) {
-            p = p.next;
-            f = f.next.next;
         }
-        // 递归调用 p在链表的中部
-        ListNode h2 = sortListRec(p.next);
-        // 将一个链表从中间分为两部分 一个是head，一个是h2
-        p.next = null;
-        return merge(sortListRec(head), h2);
+        ListNode slow = head,fast = head,pre = null;
+        while(fast != null && fast.next != null) {
+            pre = slow;
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        pre.next = null;
+        ListNode l1 = sortList(head);
+        ListNode l2 = sortList(slow);
+        return merge(l1, l2);
     }
 
     /**
