@@ -122,32 +122,32 @@ public class Q215KthLargestElementinanArray {
 
     /**
      * 同样的快速选择算法 但是在paartition操作中使用了双指针技术，所以会更快一点
-     * */
+     */
     public static int findKthLargestV(int[] nums, int k) {
-        return quickSelectII(nums, nums.length-k, 0, nums.length-1);
+        return quickSelectII(nums, nums.length - k, 0, nums.length - 1);
     }
 
-    private static int quickSelectII(int[] nums, int k, int left, int right){
+    private static int quickSelectII(int[] nums, int k, int left, int right) {
         // 递归的终止条件，同样也是
-        if(left>=right){
+        if (left >= right) {
             return nums[left];
         }
         // 随机化
-        int index = (left+right)/2;
+        int index = (left + right) / 2;
         int pivot = nums[index];
         int low = left, high = right;
         // partition 操作
-        while(low<=high){
+        while (low <= high) {
             // 如果左边比pivot小，左边不断增加，直到大于pivot
-            while(low<=high && nums[low]<pivot){
+            while (low <= high && nums[low] < pivot) {
                 low++;
             }
             // 如果右边比pivot大，右边不断减少，直到小于pivot
-            while(low<=high && nums[high]>pivot){
+            while (low <= high && nums[high] > pivot) {
                 high--;
             }
             // 交换high与low
-            if(low<=high){
+            if (low <= high) {
                 int tmp = nums[low];
                 nums[low] = nums[high];
                 nums[high] = tmp;
@@ -156,13 +156,11 @@ public class Q215KthLargestElementinanArray {
             }
         }
         // 针对K进行递归，由于K是对nums的下标来说的，所以K不用变
-        if(k>=low && k<=right){
+        if (k >= low && k <= right) {
             return quickSelectII(nums, k, low, right);
-        }
-        else if(k>=left && k<=high){
+        } else if (k >= left && k <= high) {
             return quickSelectII(nums, k, left, high);
-        }
-        else{
+        } else {
             return nums[k];
         }
     }
