@@ -1,5 +1,8 @@
+import util.TreeNode;
+
 /**
  * TODO 循环的方法
+ *
  * @author ahscuml
  * @date 2018/11/26
  * @time 15:09
@@ -51,22 +54,6 @@ public class Q617MergeTwoBinaryTrees {
     }
 
     /**
-     * 自己写的递归方法，时间复杂度O(n)
-     * */
-    public TreeNode mergeTreesII(TreeNode t1, TreeNode t2) {
-        if(t1 == null) {
-            return t2;
-        }
-        if(t2 == null) {
-            return t1;
-        }
-        t1.val = t1.val + t2.val;
-        t1.left = mergeTrees(t1.left, t2.left);
-        t1.right = mergeTrees(t1.right, t2.right);
-        return t1;
-    }
-
-    /**
      * 中序遍历， 递归 打印这个树
      */
     private static void inOrderRec(TreeNode root) {
@@ -79,15 +66,18 @@ public class Q617MergeTwoBinaryTrees {
     }
 
     /**
-     * 树结构的定义
+     * 自己写的递归方法，时间复杂度O(n)
      */
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
+    public TreeNode mergeTreesII(TreeNode t1, TreeNode t2) {
+        if (t1 == null) {
+            return t2;
         }
+        if (t2 == null) {
+            return t1;
+        }
+        t1.val = t1.val + t2.val;
+        t1.left = mergeTrees(t1.left, t2.left);
+        t1.right = mergeTrees(t1.right, t2.right);
+        return t1;
     }
 }

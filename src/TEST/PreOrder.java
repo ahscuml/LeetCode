@@ -1,5 +1,7 @@
 package TEST;
 
+import util.TreeNode;
+
 import java.util.Stack;
 
 /**
@@ -71,19 +73,6 @@ public class PreOrder {
                     cur = cur.right;
                 }
             }
-        }
-    }
-
-    /**
-     * 树结构的定义
-     */
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
         }
     }
 }

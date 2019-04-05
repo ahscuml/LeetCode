@@ -1,7 +1,10 @@
+import util.TreeNode;
+
 import java.util.Stack;
 
 /**
  * 二叉搜索树是不是合理的
+ *
  * @author ahscuml
  * @date 2018/12/28
  * @time 16:34
@@ -53,18 +56,5 @@ public class Q98ValidateBinarySearchTree {
             }
         }
         return true;
-    }
-
-    /**
-     * 树结构的定义
-     */
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
     }
 }

@@ -1,3 +1,5 @@
+import util.TreeNode;
+
 /**
  * @author ahscuml
  * @date 2018/11/26
@@ -46,18 +48,5 @@ public class Q543DiameterofBinaryTree {
         max = Math.max(max, left + right);
         // 递归的精髓，每加一层就加一
         return Math.max(left, right) + 1;
-    }
-
-    /**
-     * 树结构的定义
-     */
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
     }
 }

@@ -1,3 +1,5 @@
+import util.TreeNode;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -73,18 +75,5 @@ public class Q572SubtreeofAnotherTree {
             return check(s.left, t.left) && check(s.right, t.right);
         }
         return false;
-    }
-
-    /**
-     * 树结构的定义
-     */
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
     }
 }

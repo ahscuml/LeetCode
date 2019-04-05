@@ -1,4 +1,4 @@
-import TEST.InOrder;
+import util.TreeNode;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -16,7 +16,7 @@ public class Q105ConstructBinaryTreefromPreorderandInorderTraversal {
         int[] preorder = {3, 9, 20, 15, 7};
         int[] inorder = {9, 3, 15, 20, 7};
 
-        preorderRec(buildTree(preorder,inorder));
+        preorderRec(buildTree(preorder, inorder));
     }
 
     /**
@@ -37,7 +37,7 @@ public class Q105ConstructBinaryTreefromPreorderandInorderTraversal {
 
 
     public static TreeNode buildTree(int[] preorder, int preStart, int preEnd, int[] inorder, int inStart, int inEnd,
-                              Map<Integer, Integer> inMap) {
+                                     Map<Integer, Integer> inMap) {
         if (preStart > preEnd || inStart > inEnd) {
             return null;
         }
@@ -61,19 +61,6 @@ public class Q105ConstructBinaryTreefromPreorderandInorderTraversal {
             System.out.print(root.val);
             preorderRec(root.left);
             preorderRec(root.right);
-        }
-    }
-
-    /**
-     * 树结构的定义
-     */
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
         }
     }
 }

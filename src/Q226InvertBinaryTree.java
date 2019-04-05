@@ -1,3 +1,5 @@
+import util.TreeNode;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -90,15 +92,5 @@ public class Q226InvertBinaryTree {
             }
         }
         return root;
-    }
-
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
     }
 }

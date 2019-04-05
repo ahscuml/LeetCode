@@ -1,3 +1,5 @@
+import util.TreeNode;
+
 import java.util.Stack;
 
 /**
@@ -8,6 +10,11 @@ import java.util.Stack;
  * @time 9:40
  */
 public class Q114FlattenBinaryTreetoLinkedList {
+    /**
+     * 和我的思路一样，但是非常简单的写法
+     */
+    private TreeNode prev = null;
+
     // TODO 增加测试用例;
     public static void main(String[] args) {
 
@@ -45,10 +52,6 @@ public class Q114FlattenBinaryTreetoLinkedList {
         }
     }
 
-    /**
-     * 和我的思路一样，但是非常简单的写法
-     */
-    private TreeNode prev = null;
     public void flattenEasy(TreeNode root) {
         if (root == null)
             return;
@@ -80,19 +83,6 @@ public class Q114FlattenBinaryTreetoLinkedList {
                 cur.right = stack.peek();
             }
             cur.left = null;
-        }
-    }
-
-    /**
-     * 树结构的定义
-     */
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
         }
     }
 }

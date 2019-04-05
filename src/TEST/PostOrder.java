@@ -1,5 +1,7 @@
 package TEST;
 
+import util.TreeNode;
+
 import java.util.Stack;
 
 /**
@@ -78,19 +80,6 @@ public class PostOrder {
 
         while (!output.isEmpty()) {
             System.out.print(output.pop().val);
-        }
-    }
-
-    /**
-     * 树结构的定义
-     */
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
         }
     }
 }

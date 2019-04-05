@@ -1,3 +1,5 @@
+import util.TreeNode;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -94,18 +96,5 @@ public class Q102BinaryTreeLevelOrderTraversal {
 
         depth(root.left, depth + 1, list);
         depth(root.right, depth + 1, list);
-    }
-
-    /**
-     * 树结构的定义
-     */
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
     }
 }

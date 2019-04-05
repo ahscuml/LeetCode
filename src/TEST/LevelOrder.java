@@ -1,5 +1,7 @@
 package TEST;
 
+import util.TreeNode;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -151,20 +153,6 @@ public class LevelOrder {
             if (cur.right != null) {
                 queue.offer(cur.right);
             }
-        }
-    }
-
-
-    /**
-     * 树结构的定义
-     */
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
         }
     }
 }

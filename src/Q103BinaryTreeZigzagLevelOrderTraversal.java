@@ -1,3 +1,5 @@
+import util.TreeNode;
+
 import java.util.*;
 
 /**
@@ -139,18 +141,5 @@ public class Q103BinaryTreeZigzagLevelOrderTraversal {
             }
         }
         return res;
-    }
-
-    /**
-     * 树结构的定义
-     */
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
     }
 }

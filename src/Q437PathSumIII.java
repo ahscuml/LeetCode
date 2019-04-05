@@ -1,3 +1,5 @@
+import util.TreeNode;
+
 import java.util.HashMap;
 
 /**
@@ -44,15 +46,5 @@ public class Q437PathSumIII {
         // 递归完成后代表回溯，所以还要减去一个
         preSum.put(currSum, preSum.get(currSum) - 1);
         return res;
-    }
-
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
     }
 }

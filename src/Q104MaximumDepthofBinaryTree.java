@@ -1,3 +1,5 @@
+import util.TreeNode;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -85,15 +87,5 @@ public class Q104MaximumDepthofBinaryTree {
             level++;
         }
         return level;
-    }
-
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
     }
 }
