@@ -128,6 +128,7 @@ Medium
 [673](https://leetcode.com/problems/number-of-longest-increasing-subsequence/)          | [Number of Longest Increasing Subsequence](/src/Q673NumberofLongestIncreasingSubsequence.java) | DP              | :star: :star:
 [713](https://leetcode.com/problems/subarray-product-less-than-k/description/)          | [Subarray Product Less Than K](/src/Q713SubarrayProductLessThanK.java)                   | 双指针、滑动窗口        | :star: :star:                                                     
 [714](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) | [Best Time to Buy and Sell Stock with Transaction Fee](/src/Q714BestTimetoBuyandSellStockwithTransactionFee.java) | 动态规划、状态机 | :star: :star: :star:
+[718](https://leetcode.com/problems/maximum-length-of-repeated-subarray/)               | [Maximum Length of Repeated Subarray](/src/Q718MaximumLengthofRepeatedSubarray.java)     | DP                    | | :star: :star: :star:
 
 Hard
 ---
