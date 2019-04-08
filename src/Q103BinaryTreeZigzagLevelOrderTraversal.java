@@ -74,7 +74,6 @@ public class Q103BinaryTreeZigzagLevelOrderTraversal {
         return res;
     }
 
-
     /**
      * 递归的算法
      */
@@ -139,6 +138,42 @@ public class Q103BinaryTreeZigzagLevelOrderTraversal {
             if (!temp.isEmpty()) {
                 res.add(temp);
             }
+        }
+        return res;
+    }
+
+    /**
+     * 利用Collection.reverse函数来实现
+     */
+    public static List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+        List<List<Integer>> res = new ArrayList<>();
+        if (root == null) {
+            return res;
+        }
+        List<Integer> curList = new ArrayList<Integer>();
+        Queue<TreeNode> queue = new LinkedList();
+        queue.offer(root);
+        TreeNode cur = null;
+        boolean iszigzag = false;
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+            ArrayList<Integer> list = new ArrayList();
+            while (size != 0) {
+                cur = queue.poll();
+                list.add(cur.val);
+                if (cur.left != null) {
+                    queue.offer(cur.left);
+                }
+                if (cur.right != null) {
+                    queue.offer(cur.right);
+                }
+                size--;
+            }
+            if (iszigzag) {
+                Collections.reverse(list);
+            }
+            res.add(list);
+            iszigzag = !iszigzag;
         }
         return res;
     }
