@@ -114,6 +114,7 @@ Medium
 [300](https://leetcode.com/problems/longest-increasing-subsequence/)                    | [Longest Increasing Subsequence](/src/Q300LongestIncreasingSubsequence.java)             | DP、Binary Search     | :star: :star: :star:                                                   
 [309](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)     | [Best Time to Buy and Sell Stock with Cooldown](/src/Q309BestTimetoBuyandSellStockwithCooldown.java) | DP、状态机 | :star: :star: :star:
 [322](https://leetcode.com/problems/coin-change/)                                       | [Coin Change](/src/Q322CoinChange.java)                                                  | DP                    | :star: :star: :star: :star:   
+[328](https://leetcode.com/problems/odd-even-linked-list/)                              | [Odd Even Linked List](/src/Q328OddEvenLinkedList.java)                                  | ListNode               | :star: :star:
 [334](https://leetcode.com/problems/increasing-triplet-subsequence/)                    | [Increasing Triplet Subsequence](/src/Q334IncreasingTripletSubsequence.java)             |                       | :star: :star:
 [337](https://leetcode.com/problems/house-robber-iii/)                                  | [House Robber III](/src/Q337HouseRobberIII.java)                                         | HashMap、DP           | :star: :star: :star:                                                         
 [343](https://leetcode.com/problems/integer-break/)                                     | [Integer Break](/src/Q343IntegerBreak.java)                                              | DP                    | :star: :star:
@@ -128,7 +129,7 @@ Medium
 [673](https://leetcode.com/problems/number-of-longest-increasing-subsequence/)          | [Number of Longest Increasing Subsequence](/src/Q673NumberofLongestIncreasingSubsequence.java) | DP              | :star: :star:
 [713](https://leetcode.com/problems/subarray-product-less-than-k/description/)          | [Subarray Product Less Than K](/src/Q713SubarrayProductLessThanK.java)                   | 双指针、滑动窗口        | :star: :star:                                                     
 [714](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) | [Best Time to Buy and Sell Stock with Transaction Fee](/src/Q714BestTimetoBuyandSellStockwithTransactionFee.java) | 动态规划、状态机 | :star: :star: :star:
-[718](https://leetcode.com/problems/maximum-length-of-repeated-subarray/)               | [Maximum Length of Repeated Subarray](/src/Q718MaximumLengthofRepeatedSubarray.java)     | DP                    | | :star: :star: :star:
+[718](https://leetcode.com/problems/maximum-length-of-repeated-subarray/)               | [Maximum Length of Repeated Subarray](/src/Q718MaximumLengthofRepeatedSubarray.java)     | DP                    | :star: :star: :star:
 
 Hard
 ---
