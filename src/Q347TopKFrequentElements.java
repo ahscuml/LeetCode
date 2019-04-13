@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author ahscuml
@@ -19,6 +16,7 @@ public class Q347TopKFrequentElements {
     }
 
     /**
+     * 使用桶排序来做这件事情
      * 利用HashMap统计频次
      * 利用List的数组存储结果
      */
@@ -31,6 +29,7 @@ public class Q347TopKFrequentElements {
         }
 
         // 遍历存有频率的HashMap,利用存有list的数组bucket 按照频率将元素存储到bucket里
+        // 如何遍历HashMap也是一个重点
         List<Integer>[] bucket = new List[nums.length + 1];
         for (int i : map.keySet()) {
             int fre = map.get(i);
@@ -46,6 +45,58 @@ public class Q347TopKFrequentElements {
                 res.addAll(bucket[i]);
                 k -= bucket[i].size();
             }
+        }
+        return res;
+    }
+
+    /**
+     * 使用堆来完成任务，也就是PriorityQueue
+     * */
+    public static List<Integer> topKFrequentII(int[] nums, int k) {
+        // 利用HahsMap来存储频次
+        Map<Integer, Integer> map = new HashMap<>();
+        for(int n: nums){
+            map.put(n, map.getOrDefault(n,0)+1);
+        }
+
+        // 优先队列的使用
+        PriorityQueue<Map.Entry<Integer, Integer>> maxHeap =
+                new PriorityQueue<>((a,b)->(b.getValue()-a.getValue()));
+        for(Map.Entry<Integer,Integer> entry: map.entrySet()){
+            maxHeap.add(entry);
+        }
+
+        List<Integer> res = new ArrayList<>();
+        while(res.size()<k){
+            Map.Entry<Integer, Integer> entry = maxHeap.poll();
+            res.add(entry.getKey());
+        }
+        return res;
+    }
+
+    /**
+     * 使用TreeMap来完成这个任务
+     * */
+    public static List<Integer> topKFrequentIII(int[] nums, int k) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for(int n: nums){
+            map.put(n, map.getOrDefault(n,0)+1);
+        }
+
+        TreeMap<Integer, List<Integer>> freqMap = new TreeMap<>();
+        for(int num : map.keySet()){
+            int freq = map.get(num);
+            if(!freqMap.containsKey(freq)){
+                freqMap.put(freq, new LinkedList<>());
+            }
+            freqMap.get(freq).add(num);
+        }
+
+        // 对于TreeMap的使用
+        List<Integer> res = new ArrayList<>();
+        while(res.size()<k){
+            Map.Entry<Integer, List<Integer>> entry = freqMap.pollLastEntry();
+            res.addAll(entry.getValue());
         }
         return res;
     }

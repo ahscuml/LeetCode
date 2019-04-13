@@ -1,6 +1,8 @@
 import java.util.Arrays;
+import java.util.PriorityQueue;
 
 /**
+ * 非常重点的题，主要考察Quick Select方法(https://www.jianshu.com/p/52f90fe2b141)
  * @author ahscuml
  * @date 2018/10/8
  * @time 19:56
@@ -20,6 +22,7 @@ public class Q215KthLargestElementinanArray {
         System.out.println(findKthLargestIII(nums5, 1));
         System.out.println(findKthLargestIV(nums3, 4));
         System.out.println(findKthLargestV(nums3, 4));
+        System.out.println(findKthLargestVI(nums3, 4));
     }
 
     /**
@@ -132,7 +135,7 @@ public class Q215KthLargestElementinanArray {
         if (left >= right) {
             return nums[left];
         }
-        // 随机化
+        // 随机化, 取中点的值，其实也不是最好的，应该是三点法
         int index = (left + right) / 2;
         int pivot = nums[index];
         int low = left, high = right;
@@ -165,6 +168,19 @@ public class Q215KthLargestElementinanArray {
         }
     }
 
+    /**
+     * 这个问题非常适合利用堆来完成，使用一个小顶堆，在Java中就是priority queue
+     * */
+    public static int findKthLargestVI(int[] nums, int k) {
+        PriorityQueue<Integer> priorityQueue = new PriorityQueue<>(k);
+        for(int el : nums) {
+            priorityQueue.add(el);
+            if (priorityQueue.size() > k) {
+                priorityQueue.poll();
+            }
+        }
+        return priorityQueue.peek();
+    }
 
     private static void swap(int[] nums, int i, int j) {
         int temp = nums[i];
