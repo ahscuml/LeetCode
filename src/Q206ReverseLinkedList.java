@@ -52,23 +52,23 @@ public class Q206ReverseLinkedList {
             return null;
         }
         HashMap<Integer,ListNode> map = new HashMap();
-        ListNode pointer = new ListNode(0);
-        pointer.next = head;
+        ListNode dummyHead = new ListNode(0);
+        dummyHead.next = head;
         int n = 0;
-        while(pointer.next != null) {
-            pointer = pointer.next;
-            map.put(n,pointer);
+        while(dummyHead.next != null) {
+            dummyHead = dummyHead.next;
+            map.put(n,dummyHead);
             n++;
         }
         n--;
         head = map.get(n);
-        pointer = head;
+        dummyHead = head;
         while(n > 0) {
             n--;
-            pointer.next = map.get(n);
-            pointer = pointer.next;
+            dummyHead.next = map.get(n);
+            dummyHead = dummyHead.next;
         }
-        pointer.next = null;
+        dummyHead.next = null;
         return head;
     }
 
