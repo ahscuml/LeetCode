@@ -91,7 +91,7 @@ public class Q102BinaryTreeLevelOrderTraversal {
         if (depth > list.size()) {
             list.add(new ArrayList<>());
         }
-        // 获取之前添加的ArrayList然后添加数据；
+        // 获取之前添加的ArrayList然后添加数据；主要depth要减一
         list.get(depth - 1).add(root.val);
 
         depth(root.left, depth + 1, list);

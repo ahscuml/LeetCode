@@ -30,51 +30,6 @@ public class Q103BinaryTreeZigzagLevelOrderTraversal {
     }
 
     /**
-     * 通过翻转来实现，循环算法
-     */
-    public static List<List<Integer>> zigzagLevelOrderIte(TreeNode root) {
-        List<List<Integer>> res = new ArrayList();
-        List<Integer> curRes = new ArrayList();
-        if (root == null) {
-            return res;
-        }
-        Queue<TreeNode> queue = new LinkedList();
-        queue.offer(root);
-        TreeNode cur;
-        int level = 1;
-        // 当前层的元素数量
-        int A = 1;
-        // 下一层的元素数量
-        int next = 0;
-        while (!queue.isEmpty()) {
-
-            cur = queue.poll();
-            // 当前行减1；
-            A--;
-            curRes.add(cur.val);
-            if (cur.left != null) {
-                queue.offer(cur.left);
-                next++;
-            }
-            if (cur.right != null) {
-                queue.offer(cur.right);
-                next++;
-            }
-            if (A == 0) {
-                if (level % 2 == 0) {
-                    Collections.reverse(curRes);
-                }
-                res.add(curRes);
-                curRes = new ArrayList();
-                A = next;
-                next = 0;
-                level++;
-            }
-        }
-        return res;
-    }
-
-    /**
      * 递归的算法
      */
     public static List<List<Integer>> zigzagLevelOrderRec(TreeNode root) {
@@ -100,7 +55,7 @@ public class Q103BinaryTreeZigzagLevelOrderTraversal {
     }
 
     /**
-     * 使用一个栈与一个队列来实现，因为栈弹出的过程就是翻转的过程
+     * 使用两个栈来实现，因为栈弹出的过程就是翻转的过程
      */
     private static List<List<Integer>> Helper(TreeNode root) {
         TreeNode cur;
@@ -109,12 +64,12 @@ public class Q103BinaryTreeZigzagLevelOrderTraversal {
             return res;
         }
         Stack<TreeNode> stack = new Stack<>();
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.offer(root);
+        Stack<TreeNode> queue = new Stack<>();
+        queue.push(root);
         while (!queue.isEmpty() || !stack.isEmpty()) {
             List<Integer> temp = new ArrayList<>();
             while (!queue.isEmpty()) {
-                cur = queue.poll();
+                cur = queue.pop();
                 temp.add(cur.val);
                 if (cur.left != null) {
                     stack.push(cur.left);
@@ -128,11 +83,11 @@ public class Q103BinaryTreeZigzagLevelOrderTraversal {
             while (!stack.isEmpty()) {
                 cur = stack.pop();
                 temp.add(cur.val);
-                if (cur.left != null) {
-                    queue.offer(cur.left);
-                }
                 if (cur.right != null) {
-                    queue.offer(cur.right);
+                    queue.push(cur.right);
+                }
+                if (cur.left != null) {
+                    queue.push(cur.left);
                 }
             }
             if (!temp.isEmpty()) {
@@ -145,7 +100,7 @@ public class Q103BinaryTreeZigzagLevelOrderTraversal {
     /**
      * 利用Collection.reverse函数来实现
      */
-    public static List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+    public static List<List<Integer>> zigzagLevelOrderIte(TreeNode root) {
         List<List<Integer>> res = new ArrayList<>();
         if (root == null) {
             return res;
