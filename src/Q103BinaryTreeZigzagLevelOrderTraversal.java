@@ -48,6 +48,7 @@ public class Q103BinaryTreeZigzagLevelOrderTraversal {
 
         List<Integer> collection = sol.get(level);
         if (level % 2 == 0) collection.add(curr.val);
+        // 不一样的地方，利用ArrayList 的特点，从头添加的时候会把后面的往后移动
         else collection.add(0, curr.val);
 
         travel(curr.left, sol, level + 1);

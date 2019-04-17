@@ -98,7 +98,6 @@ public class Q113PathSumII {
             curSum -= cur.val;
             cur = null;
         }
-
         return res;
     }
 }

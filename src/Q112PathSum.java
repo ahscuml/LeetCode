@@ -40,12 +40,12 @@ public class Q112PathSum {
 
     /**
      * 采用循环的方法，可以避免堆栈的溢出，但是代码量很大，而且需要一个栈存储当前节点的和
+     * 其实就是前序遍历，只不过存储的是值而已，通过一个判断来完成题目要求。
      */
     public static boolean hasPathSumIte(TreeNode root, int sum) {
         if (root == null) {
             return false;
         }
-
         Stack<TreeNode> stack = new Stack<>();
         Stack<Integer> SumForNode = new Stack<>();
         int curSum = 0;
