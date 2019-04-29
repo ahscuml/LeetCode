@@ -41,6 +41,7 @@ Easy
 [226](https://leetcode.com/problems/invert-binary-tree/)                                  | [Invert Binary Tree](/src/Q226InvertBinaryTree.java)                                    | Tree                 | :star: :star: :star:                                             
 [234](https://leetcode.com/problems/palindrome-linked-list/description/)                  | [Palindrome Linked List](/src/Q234PalindromeLinkedList.java)                            | LinkedList、双指针      | :star: :star: :star:                        
 [235](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)      | [Lowest Common Ancestor of a Binary Search Tree](/src/Q235LowestCommonAncestorofaBinarySearchTree.java) | 递归  | :star: :star: :star:
+[257](https://leetcode.com/problems/binary-tree-paths/)                                   | [Binary Tree Paths](/src/Q257BinaryTreePaths.java)                                      | Tree, String          | :star: :star: :star: :star:
 [338](https://leetcode.com/problems/counting-bits/)                                       | [Counting Bits](/src/Q338CountingBits.java)                                             | bits                 | :star: :star: :star:                                                                   
 [401](https://leetcode.com/problems/binary-watch/description/)                            | [Binary Watch](/src/Q401BinaryWatch.java)                                               | 递归                 | :star:                                                      
 [437](https://leetcode.com/problems/path-sum-iii/)                                        | [Path Sum III](/src/Q437PathSumIII.java)                                                | HashMap,Tree         | :star: :star: :star: 
@@ -52,6 +53,7 @@ Easy
 [581](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/description/)   | [Shortest Unsorted Continuous Subarray](/src/Q581ShortestUnsortedContinuousSubarray.java) | Array              | :star: :star: :star:
 [617](https://leetcode.com/problems/merge-two-binary-trees/)                              | [Merge Two Binary Trees](/src/Q617MergeTwoBinaryTrees.java)                             | Tree                 | :star: :star: :star:
 [628](https://leetcode.com/problems/maximum-product-of-three-numbers/description/)        | [Maximum Product of Three Numbers](/src/Q628MaximumProductofThreeNumbers.java)          | Array                | :star:                           
+[637](https://leetcode.com/problems/average-of-levels-in-binary-tree/)                    | [Average of Levels in Binary Tree](/src/Q637AverageofLevelsinBinaryTree.java)           | Tree                 | :star: :star:
 [771](https://leetcode.com/problems/jewels-and-stones/)                                   | [Jewels and Stones](/src/Q771JewelsandStones.java)                                      | String               | :star:                                         
 
 Medium
