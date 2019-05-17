@@ -15,6 +15,7 @@ public class Q96UniqueBinarySearchTrees {
 
     /**
      * 空间换时间，记录之前的结果
+     * 卡塔兰数的一个例子
      */
     public int numTrees(int n) {
         // 二叉搜索树要满足左小右大的条件
